@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope)
+ {
+  var c = this;
+	 c.data.output="";
+	 c.data.count=0;
+	c.data.counts=0;
+	c.data.counter=0;
+c.call1=function()
+	 {
+	alert(c.data.count);
+		 c.data.count=c.data.count+1;
+		c.server.update();
+	 }
+
+	 c.call2=function()
+	 {
+		 alert();
+		 c.data.counts=c.data.counts+1
+		 c.server.update();
+	 }
+	 c.call3=function()
+	 {
+		 alert(c.data.counter);
+		 c.data.counter=c.data.counter+1
+		 c.server.update();
+		 
+	 }
+ var x;
+	 x=$scope.data.v;
+	 if(x==0){
+		 var t1=$scope.data.temp;
+		 document.getElementById("a").innerHTML="This article is" +t1;
+	 }
+	 else if(x==1)
+		 {
+			var t2=$scope.data.ear;
+		 document.getElementById("b").innerHTML="This article is" +t2;
+		 }
+	 
+	 
+	 else if(x==2)
+		 {
+			var t3=$scope.data.head;
+			 document.getElementById("c").innerHTML="This article is" +t3;
+		 }
+}
+
+
+]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 8888; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+}
+@media (min-width: 1366px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    }
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button.button {
+    background:none;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  border-bottom:#02274a 1px solid;
+  padding:0 0 3px 0;
+  font-size:16px;
+}
+
+button.button:hover {
+  border-bottom:#a99567 1px solid;
+  color:#a99567;
+}
+.wrapper
+{
+  max-width : 100%;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>patient_knowledge</id>
+        <internal>false</internal>
+        <link/>
+        <name>patient knowledge</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+var v;
+	var m;
+	var n;
+	var o;
+	var g= new GlideRecord('x_pvi_health_care_count')
+	g.addQuery();
+	g.query();
+	if(g.next())
+		{
+			m = g.count;
+			n = g.counts;
+			//gs.addInfoMessage(n);
+			o = g.counter;
+			parseInt(m);
+			parseInt(n);
+			parseInt(o);
+			//gs.addInfoMessage(m+1);
+		}
+ 
+	if(input)
+		{
+		var gr= new GlideRecord('x_pvi_health_care_count');	
+			gr.query();
+      gr.next();
+			gr.count=m+input.count;
+			//gs.addInfoMessage(gr.counts);
+			gr.counts=n+input.counts;
+			gr.counter=o+input.counter;
+			
+			gr.update();
+				
+
+		}
+	
+	
+	var test= new GlideRecord('x_pvi_health_care_count');
+	test.addQuery();
+	test.query();
+	if(test.next())
+		{
+			if((test.count>=test.counts)&&(test.count>=test.counter))
+				{
+				
+					data.temp=test.count.toString();
+					
+					
+					data.v=0;
+				
+				}
+			else if((test.counts>=test.count)&&(test.counts>=test.counter))
+				{
+					
+					data.ear=test.counts.toString();
+					
+					data.v=1;
+				}
+			else if((test.counter>=test.count)&&(test.counter>=test.counts))
+				{
+					data.head=test.counter.toString();
+						
+					data.v=2;
+				}
+
+		}
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+        <sys_created_on>2017-08-10 05:08:57</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>100b2f640f688b409948715be1050eb1</sys_id>
+        <sys_mod_count>148</sys_mod_count>
+        <sys_name>patient knowledge</sys_name>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sp_widget_100b2f640f688b409948715be1050eb1</sys_update_name>
+        <sys_updated_by>dinesh.kumarm</sys_updated_by>
+        <sys_updated_on>2017-08-30 11:42:43</sys_updated_on>
+        <template><![CDATA[<h3><font color="#00000">
+  Knowledge Articles</font>
+</h3>
+<div class="list-group" id="list-group">
+
+  <button id="myBtn" class="list-group-item button" data-modal="modalOne" ng-click="c.call1()">
+		<span class="fa-stack fa-lg">
+		<i class="fa-stack-2x fa fa-circle "></i>
+		<i class="fa-stack-1x text-primary fa fa-envelope "></i>
+		</span>
+		<span class="">What is normal body Temparature?
+   
+      <p ng-model="c.output" id="a">
+      
+      </p>
+    </span>
+  </button>
+   
+      
+      
+      
+     
+      
+      
+      
+     
+
+ <button id="myBtn" class="list-group-item button" data-modal="modalTwo" ng-click="c.call2()">
+		<span class="fa-stack fa-lg">
+		<i class="fa-stack-2x fa fa-circle "></i>
+		<i class="fa-stack-1x text-primary fa fa-envelope "></i>
+		</span>
+		<span class="">Earwax and protection
+     <p ng-model="c.output" id="b">
+      
+      </p>
+   </span>
+  </button>
+  
+   <button id="myBtn" class="list-group-item button" data-modal="modalThree" ng-click="c.call3()">
+		<span class="fa-stack fa-lg">
+		<i class="fa-stack-2x fa fa-circle "></i>
+		<i class="fa-stack-1x text-primary fa fa-envelope "></i>
+		</span>
+		<span class="">Head ache & relief
+     <p ng-model="c.output" id="c">
+      
+      </p>
+     </span>
+  </button>
+
+<div id="modalOne" class="modal col-md-12">
+  <div class="modal-content">
+    <div class="contact-form">
+      <a class="close">&times;</a>
+      
+     <h4 align="center">
+       Normal Body Temperature
+      </h4> 
+      <p>            Not everyone’s “normal” body temperature is the same. Yours could be a whole degree different than someone else’s. A German doctor in the 19th century set the standard at 98.6 F, but more recent studies say the baseline for most people is closer to 98.2 F.</p>
+<div class="wrapper">
+      <img src="http://www.zoeruth.com/uploads/5/3/6/5/53656907/5025253.jpg?863" width="450" height="200" align="middle" class="img-responsive">
+      </div>
+<p>For a typical adult, body temperature can be anywhere from 97 F to 99 F. Babies and children have a little higher range: 97.9 F to 100.4 F.</p>
+
+<p>Your temperature doesn’t stay same all day, and it will vary throughout your lifetime, too. Some things that cause your temperature to move around during the day include:
+
+How active you are
+What time of day it is
+Your age
+Your sex
+What you’ve eaten or had to drink
+(If you’re a woman) where you are in your menstrual cycle
+Your temperature reading changes based on where on your body you measure it. Underarm readings can be a degree lower than what you’d find from your mouth. Rectal temperatures usually are up to a degree higher than mouth readings.
+
+A body temperature higher than your normal range is a fever. It’s hypothermia when the body temperature dips too low. Both need to be watched.</p>
+
+Fever
+
+How high is too high when it comes to your temperature? Anything above 100.4 F is considered a fever. You may feel terrible, but on the whole, a fever isn’t bad for you. It’s a sign your body is doing what it should when germs invade. It’s fighting them off.
+
+However, if your temperature is 103 F or higher or if you’ve had a fever for more than 3 days, call your doctor. Also call if you have a fever with symptoms like severe throat swelling, vomiting, headache, chest pain, stiff neck or rash.
+       <div class="wrapper">
+      <img src="http://i.huffpost.com/gen/1545927/images/o-BODY-ATLAS-facebook.jpg" alt="Smiley face" width="450" height="200" align="middle" class="img-responsive">
+ </div>
+  <p>For children, fevers are a bit more complicated. Call your pediatrician if your child is:
+
+Under 3 months and has a rectal temperatures of 100.4 F or higher
+Between 3 months and 3 years and has a rectal temperature over 102 F
+Older than 3 years and has an oral temperatures above 103 F
+Between 3 and 6 months and -- along with a fever -- is fussier or more uncomfortable than usual, or doesn’t seem alert
+Sick enough for you to be concerned, regardless of what the thermometer says</p>
+    </div>
+  </div>
+</div>
+
+<div id="modalTwo" class="modal col-md-12">
+  <div class="modal-content">
+    <div class="contact-form">
+      <span class="close">&times;</span>
+      <h4 align="center">
+        Ear Wax Protection
+      </h4>
+       <p>
+         Earwax is a protective substance produced in the ear canal. It usually flows out of the ear by itself without problems. In general, the best way to prevent infection or impacted earwax is to leave earwax alone.
+       </p>
+       <p>
+         You can keep earwax soft by inserting a few drops of mineral oil or hydrogen peroxide mixed with warm water into your ear.
+Do not use cotton swabs, bobby pins, or other substances to remove earwax.
+Try not to get water, soap, or shampoo in your ear canal when you shower. Keep soap, bubble bath, and shampoo out of the ear canal. These products can cause itching and irritation.
+Keep your ears dry.
+      </p>
+      <div class="wrapper">
+       <img src="https://www.ferringhearingcentre.co.uk/wp-content/uploads/2015/12/ear-wax-removal-blocked-ear.jpeg" class="img-responsive" width="370" height="200" align="">
+  
+      </div>
+        
+      <p >When you rinse your hair, keep your head down with your chin toward your chest or pull the outside of your ear down over the ear canal.
+After swimming or showering, shake your head to remove water from the ear canal.
+Gently dry your ears with the corner of a tissue or towel, or use a blow-dryer on its lowest setting. Hold the dryer several inches (centimeters) from your ear.
+Put a few drops of rubbing alcohol or rubbing alcohol mixed with an equal amount of white vinegar into the ear after swimming or showering. Wiggle the outside of the ear to let the liquid enter the ear canal, then tilt your head and let it drain out. You can also use nonprescription drops to keep the inside of your ear dry.
+
+       </p>
+    </div>
+  </div>
+</div>
+  <div id="modalThree" class="modal col-md-12">
+  <div class="modal-content">
+    <div class="contact-form">
+      <span class="close">&times;</span>
+      <h4 align="center">
+        Head ache & relief
+      </h4>
+      <p>
+         Different types of medicine treat different types of headaches.
+
+Tension headaches:  Pain relievers such as acetaminophen, aspirin, ibuprofen, or naproxen,  usually help. But be careful. Taking too many of these pills can cause hard-to-treat rebound headaches. If you need to take these drugs often, see your doctor. Do not give aspirin to anyone under age 19 -- it raises their risk for a serious condition called Reye's syndrome.
+
+Migraines: One type of drug, called triptans, is the mainstay of migraine treatment. They include eletriptan (Relpax), naratriptan (Amerge), rizatriptan (Maxalt), sumatriptan (Imitrex, Zecuity), zolmitriptan (Zomig), and others. You can take them as pills, injections, and skin patches.
+       </p>
+       <p>
+         Ergotamine is another drug that offers migraine relief. You can take it as a pill or as a suppository if nausea or vomiting stops you from keeping anything down. Another form of ergotamine, called dihydroergotamine (DHE 45), also treats them. You can get it as an injection or as a nasal spray. 
+
+Aspirin and other nonsteroidal anti-inflammatory drugs (NSAIDs) also can help if you take them at the first sign of a migraine attack. NSAIDs also include ibuprofen and naproxen.</p>
+      <div class="wrapper">
+         <img src="http://back-in-business-physiotherapy.com/images/stories/headache/tension-headache-relief.jpg" class="img-responsive" width="450" height="200">
+      </div>
+     
+<p>
+If you have three or more severe, prolonged migraines per month, your  doctor may suggest you try medicine and other tactics to prevent your attacks, such as:
+
+Blood pressure drugs  like propranolol, verapamil, and others
+Antidepressants
+Anti-seizure drugs
+Muscle relaxants
+Relaxation and biofeedback techniques
+Avoiding foods that trigger your migraines
+Cefaly, a small headband device that sends electrical pulses through the forehead to stimulate a nerve linked with migraines
+Cerena, a small device for people who have an aura before a migraine. You hold it at the back of your head at the first sign of a headache, and it gives off a magnetic pulse that stimulates part of the brain. 
+
+       </p>
+    </div>
+  </div>
+</div>
+  
+      
+     
+<script>
+var modalBtns = [...document.querySelectorAll(".button")];
+modalBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.getAttribute('data-modal');
+    document.getElementById(modal).style.display = "block";
+  }
+});
+
+var closeBtns = [...document.querySelectorAll(".close")];
+closeBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.closest('.modal');
+    modal.style.display = "none";
+  }
+});
+
+window.onclick = function(event) {
+  if (event.target.className === "modal") {
+    event.target.style.display = "none";
+  }
+}
+</script>]]></template>
+    </sp_widget>
+</record_update>

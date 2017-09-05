@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_rectangle_menu_item">
+    <sp_rectangle_menu_item action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <color>default</color>
+        <condition/>
+        <display_1/>
+        <display_2/>
+        <display_date/>
+        <filter/>
+        <glyph>list-ol</glyph>
+        <hint/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <label>Doctors List</label>
+        <order>100</order>
+        <record_script/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <sp_page display_value="doctor_list">375c96180f2c4b409948715be1050e5f</sp_page>
+        <sp_rectangle_menu display_value="Doctor Header Menu">be7332980f6c4b409948715be1050e1e</sp_rectangle_menu>
+        <sp_rectangle_menu_item/>
+        <sys_class_name>sp_rectangle_menu_item</sys_class_name>
+        <sys_created_by>bala.kannan</sys_created_by>
+        <sys_created_on>2017-08-09 06:30:00</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>74d3f2980f6c4b409948715be1050e76</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Doctors List</sys_name>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sp_rectangle_menu_item_74d3f2980f6c4b409948715be1050e76</sys_update_name>
+        <sys_updated_by>kamala.kannan</sys_updated_by>
+        <sys_updated_on>2017-08-23 08:36:05</sys_updated_on>
+        <table/>
+        <type>page</type>
+        <url/>
+        <url_target/>
+    </sp_rectangle_menu_item>
+</record_update>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance">
+    <sp_instance action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph/>
+        <id/>
+        <order>0</order>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">faa1ad440f204b409948715be1050ef2</sp_column>
+        <sp_widget display_value="breadcrumbs">0fb269305b3212000d7ec7ad31f91ae2</sp_widget>
+        <sys_class_name>sp_instance</sys_class_name>
+        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+        <sys_created_on>2017-08-23 04:08:06</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>33b9da380f70c3805b8af45be1050e8c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sp_instance_33b9da380f70c3805b8af45be1050e8c</sys_update_name>
+        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+        <sys_updated_on>2017-08-23 04:08:16</sys_updated_on>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance>
+</record_update>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_user" label="Staff Profile" max_length="40" name="x_pvi_health_care_staff_profile" type="collection">
+        <element attributes="edge_encryption_enabled=true" display="true" label="Staff Name" max_length="40" name="staff_name" type="string"/>
+    </element>
+</database>

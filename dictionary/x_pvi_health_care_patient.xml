@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_user" label="Patient" max_length="40" name="x_pvi_health_care_patient" type="collection">
+        <element label="Consultant" max_length="32" name="consultant" reference="x_pvi_health_care_doctor" type="reference"/>
+        <index name="index">
+            <element name="consultant"/>
+        </index>
+    </element>
+</database>

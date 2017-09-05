@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="count" max_length="40" name="x_pvi_health_care_count" type="collection">
+        <element label="count" max_length="40" name="count" type="integer"/>
+        <element display="true" label="counter" max_length="40" name="counter" type="integer"/>
+        <element label="counts" max_length="40" name="counts" type="integer"/>
+    </element>
+</database>

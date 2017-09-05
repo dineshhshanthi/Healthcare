@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Old Reports" max_length="40" name="x_pvi_health_care_old_reports" type="collection">
+        <element label="age" max_length="40" name="age" type="integer"/>
+        <element label="hospital name" max_length="400" name="hospital_name" type="string"/>
+        <element default="javascript:gs.getUserID()" dynamic_default_value="2fd8e97bef3221002841f7f775c0fbc1" label="Patient name" max_length="32" name="patient_name" reference="x_pvi_health_care_patient" type="reference" use_dynamic_default="true"/>
+        <element label="previous consultant name " max_length="100" name="previous_consultant_name" type="string"/>
+        <element label="Treatment details" max_length="2000" name="treatment_details" type="string"/>
+        <index name="index">
+            <element name="patient_name"/>
+        </index>
+    </element>
+</database>

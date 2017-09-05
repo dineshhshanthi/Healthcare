@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="treatment_details" label="Treatment details" language="en" table="x_pvi_health_care_old_reports">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>treatment_details</element>
+            <help/>
+            <hint/>
+            <label>Treatment details</label>
+            <language>en</language>
+            <name>x_pvi_health_care_old_reports</name>
+            <plural>Treatment details</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-08-23 11:11:39</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>7faa7bb80f3803005b8af45be1050ecb</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Treatment details</sys_name>
+            <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+            <sys_update_name>sys_documentation_x_pvi_health_care_old_reports_treatment_details_en</sys_update_name>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-08-23 11:11:39</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

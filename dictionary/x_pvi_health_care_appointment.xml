@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Appointment" max_length="40" name="x_pvi_health_care_appointment" type="collection">
+        <element choice="1" label="Appointment Slot" max_length="40" name="appointment_slot" type="choice">
+            <choice>
+                <element label="9A.M" sequence="0" value="9A.M"/>
+                <element label="10A.M" sequence="1" value="10A.M"/>
+                <element label="11A.M" sequence="2" value="11A.M"/>
+                <element label="12A.M" sequence="3" value="12A.M"/>
+                <element label="1P.M" sequence="4" value="1P.M"/>
+                <element label="2P.M" sequence="5" value="2P.M"/>
+                <element label="3P.M" sequence="6" value="3P.M"/>
+                <element label="4P.M" sequence="7" value="4P.M"/>
+                <element label="5P.M" sequence="8" value="5P.M"/>
+            </choice>
+        </element>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element choice="1" label="Day" max_length="40" name="day" type="choice">
+            <choice>
+                <element label="Sunday" sequence="0" value="Sunday"/>
+                <element label="Monday" sequence="1" value="Monday"/>
+                <element label="Tuesday" sequence="2" value="Tuesday"/>
+                <element label="Wednesday" sequence="3" value="Wednesday"/>
+                <element label="Thursday" sequence="4" value="Thursday"/>
+                <element label="Friday" sequence="5" value="Friday"/>
+                <element label="Saturday" sequence="6" value="Saturday"/>
+            </choice>
+        </element>
+        <element label="Doctor name" max_length="32" name="doctor_name" reference="x_pvi_health_care_doctor" type="reference"/>
+        <element label="Patient" max_length="32" name="patient" reference="x_pvi_health_care_patient" type="reference"/>
+        <element label="Week Number" max_length="40" name="week_number" type="integer"/>
+        <index name="index">
+            <element name="patient"/>
+        </index>
+        <index name="index2">
+            <element name="doctor_name"/>
+        </index>
+    </element>
+</database>

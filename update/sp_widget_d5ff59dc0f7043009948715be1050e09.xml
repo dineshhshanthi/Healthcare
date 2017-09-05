@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 8888; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+}
+@media (min-width: 1366px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    }
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button.button {
+    background:none;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  border-bottom:#02274a 1px solid;
+  padding:0 0 3px 0;
+  font-size:16px;
+}
+
+button.button:hover {
+  border-bottom:#a99567 1px solid;
+  color:#a99567;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>doctor_knowledge</id>
+        <internal>false</internal>
+        <link/>
+        <name>doctor knowledge</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+        <sys_created_on>2017-08-21 10:38:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>d5ff59dc0f7043009948715be1050e09</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>doctor knowledge</sys_name>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sp_widget_d5ff59dc0f7043009948715be1050e09</sys_update_name>
+        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+        <sys_updated_on>2017-08-21 10:54:01</sys_updated_on>
+        <template><![CDATA[<h3><font color="#00000">
+  Knowledge Articles</font>
+</h3>
+<div class="list-group" id="list-group">
+
+  <button id="myBtn" class="list-group-item button" data-modal="modalOne">
+		<span class="fa-stack fa-lg">
+		<i class="fa-stack-2x fa fa-circle "></i>
+		<i class="fa-stack-1x text-primary fa fa-envelope "></i>
+		</span>
+		<span class="">Heart Disease</span>
+  </button>
+
+ <button id="myBtn" class="list-group-item button" data-modal="modalTwo">
+		<span class="fa-stack fa-lg">
+		<i class="fa-stack-2x fa fa-circle "></i>
+		<i class="fa-stack-1x text-primary fa fa-envelope "></i>
+		</span>
+		<span class="">Earwax and protection</span>
+  </button>
+  
+   <button id="myBtn" class="list-group-item button" data-modal="modalThree">
+		<span class="fa-stack fa-lg">
+		<i class="fa-stack-2x fa fa-circle "></i>
+		<i class="fa-stack-1x text-primary fa fa-envelope "></i>
+		</span>
+		<span class="">Head ache & relief</span>
+  </button>
+
+<div id="modalOne" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <a class="close">&times;</a>
+      
+     <h4 align="center">
+      Heart Disease
+      </h4> 
+      <p>            The heart is like any other muscle in body. It needs an adequate blood supply to provide oxygen so that the muscle can contract and pump blood to the rest of the body. Not only does the heart pump blood to the rest of the body, it also pumps blood to itself via the coronary arteries</p>
+
+      <img src=" http://images.medicinenet.com/images/slideshow/cholesterol-101-s1-photo-of-cholesterol-collage.jpg" width="500" height="200" align="middle">
+     
+<p>When one or more coronary arteries narrow, it may make it difficult for adequate blood to reach the heart, especially during exercise. This can cause the heart muscle to ache like any other muscle in the body. Should the arteries continue to narrow, it may take less activity to stress the heart and provoke symptoms. The classic symptoms of chest pain or pressure and shortness of breath due to atherosclerotic heart disease (ASHD) or coronary artery disease (CAD) are called angina.</p>
+
+<p>Should one of the coronary arteries become completely blocked -- usually due to a plaque that ruptures and causes a blood clot to form -- blood supply to part of the heart may be lost. This causes a piece of heart muscle to die. This is called a heart attack or myocardial infarction (myo=muscle + cardia=heart + infarction= tissue death).
+
+Cardiovascular disease, for this article, will be limited to describing the spectrum of atherosclerosis or hardening of the arteries that ranges from minimal blockage that may produce no symptoms to complete obstruction that presents as a myocardial infarction. Other topics, such as myocarditis, heart valve problems, and congenital heart defects will not be covered.
+
+ Who is at risk for heart disease?
+Smoking
+High blood pressure (hypertension)
+High cholesterol
+Diabetes
+Family history of heart problems, especially heart attacks and strokes
+Obesity 
+
+What are the signs and symptoms of heart (cardiovascular) disease?
+The classic symptoms of angina, or pain from the heart, are described as a crushing pain or heaviness in the center of the chest with radiation of the pain to the arm (usually the left) or jaw. There can be associated shortness of breath sweating and nausea.
+The symptoms tend to be brought on by activity and get better with rest.
+Some people may have  indigestion and nausea while others may have upper abdominal, shoulder, or back pain. 
+Unstable angina is the term used to describe symptoms that occur at rest, waken the patient from sleep, and do not respond quickly to nitroglycerin or rest.
+       <div class="col-md-12">
+      <img src="http://i.huffpost.com/gen/1545927/images/o-BODY-ATLAS-facebook.jpg" alt="" width="500" height="200" align="middle">
+ </div>
+  <p></p>
+    </div>
+  </div>
+</div>
+
+<div id="modalTwo" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <span class="close">&times;</span>
+      <h4 align="center">
+        Ear Wax Protection
+      </h4>
+       <p>
+         Earwax is a protective substance produced in the ear canal. It usually flows out of the ear by itself without problems. In general, the best way to prevent infection or impacted earwax is to leave earwax alone.
+       </p>
+       <p>
+         You can keep earwax soft by inserting a few drops of mineral oil or hydrogen peroxide mixed with warm water into your ear.
+Do not use cotton swabs, bobby pins, or other substances to remove earwax.
+Try not to get water, soap, or shampoo in your ear canal when you shower. Keep soap, bubble bath, and shampoo out of the ear canal. These products can cause itching and irritation.
+Keep your ears dry.
+      </p>
+         <img src="https://www.ferringhearingcentre.co.uk/wp-content/uploads/2015/12/ear-wax-removal-blocked-ear.jpeg" width="500" height="200" align="">
+
+      <p>When you rinse your hair, keep your head down with your chin toward your chest or pull the outside of your ear down over the ear canal.
+After swimming or showering, shake your head to remove water from the ear canal.
+Gently dry your ears with the corner of a tissue or towel, or use a blow-dryer on its lowest setting. Hold the dryer several inches (centimeters) from your ear.
+Put a few drops of rubbing alcohol or rubbing alcohol mixed with an equal amount of white vinegar into the ear after swimming or showering. Wiggle the outside of the ear to let the liquid enter the ear canal, then tilt your head and let it drain out. You can also use nonprescription drops to keep the inside of your ear dry.
+
+       </p>
+    </div>
+  </div>
+</div>
+  <div id="modalThree" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <span class="close">&times;</span>
+      <h4 align="center">
+        Head ache & relief
+      </h4>
+      <p>
+         Different types of medicine treat different types of headaches.
+
+Tension headaches:  Pain relievers such as acetaminophen, aspirin, ibuprofen, or naproxen,  usually help. But be careful. Taking too many of these pills can cause hard-to-treat rebound headaches. If you need to take these drugs often, see your doctor. Do not give aspirin to anyone under age 19 -- it raises their risk for a serious condition called Reye's syndrome.
+
+Migraines: One type of drug, called triptans, is the mainstay of migraine treatment. They include eletriptan (Relpax), naratriptan (Amerge), rizatriptan (Maxalt), sumatriptan (Imitrex, Zecuity), zolmitriptan (Zomig), and others. You can take them as pills, injections, and skin patches.
+       </p>
+       <p>
+         Ergotamine is another drug that offers migraine relief. You can take it as a pill or as a suppository if nausea or vomiting stops you from keeping anything down. Another form of ergotamine, called dihydroergotamine (DHE 45), also treats them. You can get it as an injection or as a nasal spray. 
+
+Aspirin and other nonsteroidal anti-inflammatory drugs (NSAIDs) also can help if you take them at the first sign of a migraine attack. NSAIDs also include ibuprofen and naproxen.</p>
+      <img src="http://back-in-business-physiotherapy.com/images/stories/headache/tension-headache-relief.jpg" width="500" height="200">
+<p>
+If you have three or more severe, prolonged migraines per month, your  doctor may suggest you try medicine and other tactics to prevent your attacks, such as:
+
+Blood pressure drugs  like propranolol, verapamil, and others
+Antidepressants
+Anti-seizure drugs
+Muscle relaxants
+Relaxation and biofeedback techniques
+Avoiding foods that trigger your migraines
+Cefaly, a small headband device that sends electrical pulses through the forehead to stimulate a nerve linked with migraines
+Cerena, a small device for people who have an aura before a migraine. You hold it at the back of your head at the first sign of a headache, and it gives off a magnetic pulse that stimulates part of the brain. 
+
+       </p>
+    </div>
+  </div>
+</div>
+<script>
+var modalBtns = [...document.querySelectorAll(".button")];
+modalBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.getAttribute('data-modal');
+    document.getElementById(modal).style.display = "block";
+  }
+});
+
+var closeBtns = [...document.querySelectorAll(".close")];
+closeBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.closest('.modal');
+    modal.style.display = "none";
+  }
+});
+
+window.onclick = function(event) {
+  if (event.target.className === "modal") {
+    event.target.style.display = "none";
+  }
+}
+</script>]]></template>
+    </sp_widget>
+</record_update>

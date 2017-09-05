@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function ($filter, $location) {
+	alert("its working");
+	var c = this;
+	c.options.glyph = c.options.glyph || 'search';
+	c.options.title = c.options.title || c.data.searchMsg;
+
+	c.onSelect = function($item, $model, $label) {
+		if ($item.target)
+			window.open($item.url, $item.target);
+		else
+			$location.url($item.url);
+
+		/*if ($item.type == "sc")
+			$location.search({id: 'sc_cat_item', sys_id: $item.sys_id});
+		if ($item.type == "sc_content") {
+			if ($item.content_type == "kb")
+				$location.search({id: 'kb_article', sys_id: $item.kb_article});
+			else if ($item.content_type == "external")
+				window.open($item.url, '_blank');
+			else
+				$location.search({id: 'sc_cat_item', sys_id: $item.sys_id});
+		}
+		if ($item.type == "sc_guide")
+			$location.search({id: 'sc_cat_item_guide', sys_id: $item.sys_id});
+		if ($item.type == "kb")
+			$location.search({id: 'kb_article', sys_id: $item.sys_id});
+		if ($item.type == "qa")
+			$location.search({id: 'kb_social_qa_question', question_id: $item.sys_id});
+		if ($item.type == "rec")
+			$location.search({id: $item.page, sys_id: $item.sys_id, table: $item.table});*/
+	};
+
+	c.getResults = function(query) {
+		return c.server.get({q: query}).then(function(response) {
+			var a = $filter('orderBy')(response.data.results, '-score');
+			return $filter('limitTo')(a, c.data.limit);
+		});
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>ul.dropdown-menu {
+    min-width: 100%;
+    border-radius: 0px 0px 4px 4px;
+    margin:0px;
+}
+
+ul.dropdown-menu a.ta-item {
+	line-height: 20px;
+}
+
+ul.dropdown-menu i.ta-icon, i.ta-img {
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    line-height: 20px;
+    float:left;
+    margin-right: 8px;
+}
+
+input[name="q"] {
+color: black;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>typeahead_2</id>
+        <internal>false</internal>
+        <link><![CDATA[function(scope) {
+	var lazyLoader = $injector.get("lazyLoader");
+	lazyLoader.putTemplates(scope.data.typeaheadTemplates);
+}]]></link>
+        <name>typeahead 2</name>
+        <option_schema>[{"name":"title","label":"Title","type":"string"},{"name":"color","label":"Color","type":"string"},{"name":"glyph","label":"glyph","type":"string"},{"name":"size","label":"Size","type":"string"},{"hint":"Number of typeahead search results returned (default 15)","name":"limit","label":"Limit","type":"integer"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	data.searchType = $sp.getParameter("t");
+	data.results = [];
+	
+	data.searchMsg = gs.getMessage("HI "+ gs.getUser().getFirstName()+" how can we help?");
+	data.limit = options.limit || 15;
+	var textQuery = '123TEXTQUERY321';
+
+	if (!input) {
+		data.typeaheadTemplates = {};
+
+		var searchGroupTemplatesGR = new GlideRecord("sp_search_source");
+		searchGroupTemplatesGR.query();
+		while(searchGroupTemplatesGR.next()) {
+			if (searchGroupTemplatesGR.getElement("advanced_typeahead_config").getDisplayValue() == "true")
+				data.typeaheadTemplates["sp-typeahead-" + searchGroupTemplatesGR.getValue("id") + ".html"] = $sp.translateTemplate(searchGroupTemplatesGR.getValue("typeahead_template"));
+		}
+
+		return;
+	}
+
+	data.q = input.q;
+
+	//Gotta decide if we want to use the portal's sources, or use the defaults declared by
+	//the sys property
+	var useDefaultPortals;
+	if (!$sp.getPortalRecord()) {
+		useDefaultPortals = true;
+	} else {
+		var searchSourcesForPortalGR = new GlideRecord("m2m_sp_portal_search_source");
+		searchSourcesForPortalGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+		searchSourcesForPortalGR.query();
+		useDefaultPortals = searchSourcesForPortalGR.getRowCount() == 0;
+	}
+
+	if (useDefaultPortals) {
+		var defaultSearchSourceGR = new GlideRecord("sp_search_source");
+		var defaultSearchSourceIDList = gs.getProperty("glide.service_portal.default_search_sources", "");
+		defaultSearchSourceGR.addQuery("sys_id", "IN", defaultSearchSourceIDList);
+		defaultSearchSourceGR.addQuery("enable_typeahead", true);
+		defaultSearchSourceGR.query();
+		while(defaultSearchSourceGR.next()) {
+			getResults(defaultSearchSourceGR);
+		}
+	} else {
+		var m2mSearchSourceGR = new GlideRecord("m2m_sp_portal_search_source");
+		m2mSearchSourceGR.addQuery("sp_search_source.enable_typeahead", true);
+		m2mSearchSourceGR.addQuery("sp_portal", $sp.getPortalRecord().getUniqueValue());
+		m2mSearchSourceGR.query();
+		while(m2mSearchSourceGR.next()) {
+			getResults(m2mSearchSourceGR.getElement("sp_search_source").getRefRecord());
+		}
+	}
+
+	function getResults(gr) {
+		if (gr.is_scripted_source) {
+			var input = {};
+			input.query = data.q;
+			var evaluator = new GlideScopedEvaluator();
+			var results = evaluator.evaluateScript(gr, "data_fetch_script", input);
+
+			results.forEach(function(item) {
+				if (gr.getElement("advanced_typeahead_config").getDisplayValue() == "true")
+					item.templateID = "sp-typeahead-" + gr.getValue("id") + ".html";
+				else {
+					item.glyph = gr.getValue("typeahead_glyph");
+					item.linkToPage = gr.getValue("page");
+				}
+				data.results.push(item);
+			});
+		} else {
+			var primaryField = gr.getValue("primary_display_field");
+			var displayFields = gr.getValue("display_fields");
+
+			var resultGR = new GlideRecordSecure(gr.getValue("source_table"));
+			var condition = gr.getValue("condition");
+			if (condition)
+				resultGR.addEncodedQuery(condition);
+			if (data.q)
+				resultGR.addQuery('123TEXTQUERY321', data.q);
+			resultGR.query();
+
+			var searchTableCount = 0;
+			while (resultGR.next() && searchTableCount < data.limit) {
+				if (!resultGR.canRead())
+					continue;
+
+				var secondaryValues = {};
+
+				if (displayFields)
+					displayFields.split(",").forEach(function(field) {
+						var obj = getField(resultGR, field);
+						secondaryValues[field] = obj;
+					});
+
+				var item = {
+					primary: (primaryField) ? resultGR.getValue(primaryField) : resultGR.getDisplayValue(),
+					sys_id: resultGR.getUniqueValue(),
+					table: resultGR.getTableName(),
+					fields: secondaryValues
+				};
+
+				if (gr.getElement("advanced_typeahead_config").getDisplayValue() == "true")
+					item.templateID = "sp-typeahead-" + gr.getValue("id") + ".html";
+				else {
+					item.glyph = gr.getValue("typeahead_glyph");
+					item.linkToPage = gr.getValue("page");
+				}
+
+				data.results.push(item);
+				searchTableCount++;
+			}
+		}
+
+		var pageGR = new GlideRecord("sp_page");
+		if (pageGR.get(gr.getValue("page")))
+			var pageID = pageGR.getValue("id");
+
+		data.results.forEach(function(result) {
+			if (result.url)
+				return;
+
+			if (pageID) {
+				result.url = "?id=" + pageID;
+				if (result.sys_id)
+					result.url += "&sys_id=" + result.sys_id;
+				if (result.table)
+					result.url += "&table=" + result.table
+			} else {
+				result.url = "";
+			}
+		});
+	}
+
+	function getField(gr, name) {
+		var f = {};
+		f.display_value = gr.getDisplayValue(name);
+		f.value = gr.getValue(name);
+		var ge = gr.getElement(name);
+		if (ge == null)
+			return f;
+
+		f.type = ge.getED().getInternalType()
+		f.label = ge.getLabel();
+		return f;
+	}
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>bala.kannan</sys_created_by>
+        <sys_created_on>2017-08-09 11:42:02</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>746bfbd80f208b409948715be1050eab</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>typeahead 2</sys_name>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sp_widget_746bfbd80f208b409948715be1050eab</sys_update_name>
+        <sys_updated_by>bala.kannan</sys_updated_by>
+        <sys_updated_on>2017-08-23 05:51:43</sys_updated_on>
+        <template><![CDATA[<form method="get" action="?">
+  <input type="hidden" name="id" value="search"/>
+  <input type="hidden" name="t" value="{{data.searchType}}"/>
+  <div class="input-group input-group-{{::c.options.size}}">
+    <!-- uses ui.bootstrap.typeahead -->
+    <input name="q" type="text" placeholder="{{::c.options.title}}" ng-model="c.selectedState"
+           ng-model-options="{debounce: 250}" autocomplete="off"
+           uib-typeahead="item as item.primary for item in c.getResults($viewValue)"
+           typeahead-focus-first="false"
+           typeahead-on-select="c.onSelect($item, $model, $label)"
+           typeahead-template-url="sp-typeahead.html" class="form-control input-typeahead"
+           aria-label="{{::c.options.title}}" tabindex="0">
+    <span class="input-group-btn">
+      <button name="search" type="submit" class="btn btn-{{::c.options.color}}" aria-label="Submit {{::c.options.title}}">
+    	<i ng-if="::c.options.glyph" class="fa fa-{{::c.options.glyph}}"></i>
+      </button>
+    </span>
+  </div>
+</form>]]></template>
+    </sp_widget>
+</record_update>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="state" table="x_pvi_health_care_general_treatments" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Counsulting</label>
+            <language>en</language>
+            <name>x_pvi_health_care_general_treatments</name>
+            <sequence>0</sequence>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-20 05:32:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c8072f3d0f408b005b8af45be1050e31</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-20 05:33:24</sys_updated_on>
+            <value>11</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Testing</label>
+            <language>en</language>
+            <name>x_pvi_health_care_general_treatments</name>
+            <sequence>1</sequence>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-20 05:32:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>08072f3d0f408b005b8af45be1050e33</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-20 05:33:41</sys_updated_on>
+            <value>12</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Treatment</label>
+            <language>en</language>
+            <name>x_pvi_health_care_general_treatments</name>
+            <sequence>2</sequence>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-20 05:32:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>80072f3d0f408b005b8af45be1050e35</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-20 05:33:38</sys_updated_on>
+            <value>13</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed</label>
+            <language>en</language>
+            <name>x_pvi_health_care_general_treatments</name>
+            <sequence>3</sequence>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-20 05:32:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0c072f3d0f408b005b8af45be1050e36</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-20 05:32:27</sys_updated_on>
+            <value>14</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <name>x_pvi_health_care_general_treatments</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-20 05:32:27</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>c0072f3d0f408b005b8af45be1050e33</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_name>state</sys_name>
+            <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+            <sys_update_name>sys_choice_x_pvi_health_care_general_treatments_state</sys_update_name>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-20 05:33:41</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

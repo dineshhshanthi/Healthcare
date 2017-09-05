@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Testing task" max_length="40" name="x_pvi_health_care_testing_task" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" mandatory="true" max_length="40" name="category" type="string">
+            <choice>
+                <element label="general" sequence="0" value="general"/>
+                <element label="cardiology" sequence="1" value="cardiology"/>
+                <element label="neurology" sequence="2" value="neurology"/>
+                <element label="orthopedics" sequence="3" value="orthopedics"/>
+            </choice>
+        </element>
+        <element label="description" max_length="3400" name="description" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="parent number" max_length="40" name="parent_number" type="string"/>
+        <element label="short description" max_length="40" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="State" max_length="40" name="state" type="string">
+            <choice>
+                <element label="open" sequence="0" value="1"/>
+                <element label="working in progress" sequence="1" value="2"/>
+                <element label="closed complete" sequence="2" value="3"/>
+                <element label="closed incomplete" sequence="3" value="4"/>
+                <element label="closed skipped" sequence="4" value="5"/>
+            </choice>
+        </element>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Test Name" max_length="40" name="test_name" type="string">
+            <choice>
+                <element label="Blood Test" sequence="0" value="Blood Test"/>
+                <element label="Urine Test" sequence="1" value="Urine Test"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Test type" max_length="40" name="test_type" type="string">
+            <choice>
+                <element label="General Test" sequence="0" value="General Test"/>
+                <element label="Basic" sequence="1" value="Basic"/>
+                <element label="Standard" sequence="2" value="Standard"/>
+                <element label="Intensive" sequence="3" value="Intensive"/>
+            </choice>
+        </element>
+    </element>
+</database>

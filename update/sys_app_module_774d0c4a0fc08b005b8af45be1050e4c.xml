@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Health Care Management">f4c284b10fcc4b009948715be1050e94</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Testing Activities</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_pvi_health_care_testing_activities</name>
+        <order>51</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_pvi_health_care.testing_activities_user</roles>
+        <survey/>
+        <survey_overwrite>true</survey_overwrite>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+        <sys_created_on>2017-07-20 08:19:50</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>774d0c4a0fc08b005b8af45be1050e4c</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Testing Activities</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sys_app_module_774d0c4a0fc08b005b8af45be1050e4c</sys_update_name>
+        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+        <sys_updated_on>2017-07-27 08:39:15</sys_updated_on>
+        <timeline_page/>
+        <title>Testing Activities</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

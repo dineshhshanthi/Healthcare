@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="921f72080f244b409948715be1050e2d" sys_domain="global" table="x_pvi_health_care_doctor" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>bala.kannan</sys_created_by>
+            <sys_created_on>2017-08-08 12:40:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>961f72080f244b409948715be1050e35</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_pvi_health_care_doctor" name="x_pvi_health_care_doctor" sys_domain="global" view="f05069011b320100e90d928f3d071326">921f72080f244b409948715be1050e2d</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_doctor" sys_domain="global" view="f05069011b320100e90d928f3d071326">161f72080f244b409948715be1050e33</sys_ui_section>
+            <sys_updated_by>bala.kannan</sys_updated_by>
+            <sys_updated_on>2017-08-08 12:40:10</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>bala.kannan</sys_created_by>
+            <sys_created_on>2017-08-08 12:40:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>121f72080f244b409948715be1050e33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_pvi_health_care_doctor" name="x_pvi_health_care_doctor" sys_domain="global" view="f05069011b320100e90d928f3d071326">921f72080f244b409948715be1050e2d</sys_ui_form>
+            <sys_ui_section caption="Job role" display_value="Job role" name="x_pvi_health_care_doctor" sys_domain="global" view="f05069011b320100e90d928f3d071326">1a1f72080f244b409948715be1050e31</sys_ui_section>
+            <sys_updated_by>bala.kannan</sys_updated_by>
+            <sys_updated_on>2017-08-08 12:40:10</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>bala.kannan</sys_created_by>
+            <sys_created_on>2017-08-08 12:40:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>161f72080f244b409948715be1050e31</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_pvi_health_care_doctor" name="x_pvi_health_care_doctor" sys_domain="global" view="f05069011b320100e90d928f3d071326">921f72080f244b409948715be1050e2d</sys_ui_form>
+            <sys_ui_section caption="Contact details" display_value="Contact details" name="x_pvi_health_care_doctor" sys_domain="global" view="f05069011b320100e90d928f3d071326">9e1f72080f244b409948715be1050e2e</sys_ui_section>
+            <sys_updated_by>bala.kannan</sys_updated_by>
+            <sys_updated_on>2017-08-08 12:40:10</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_pvi_health_care_doctor</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>bala.kannan</sys_created_by>
+            <sys_created_on>2017-08-08 12:40:10</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>921f72080f244b409948715be1050e2d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_pvi_health_care_doctor</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+            <sys_update_name>sys_ui_form_sections_921f72080f244b409948715be1050e2d</sys_update_name>
+            <sys_updated_by>bala.kannan</sys_updated_by>
+            <sys_updated_on>2017-08-08 12:40:10</sys_updated_on>
+            <sys_user/>
+            <view display_value="Human Resources" name="human_resources">f05069011b320100e90d928f3d071326</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

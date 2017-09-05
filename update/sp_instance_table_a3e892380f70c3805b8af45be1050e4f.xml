@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance_table">
+    <sp_instance_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field>first_name</display_field>
+        <field_list>x_pvi_health_care_user_id,first_name,email</field_list>
+        <filter/>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>1</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">faa1ad440f204b409948715be1050ef2</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Data Table from Instance Definition">38058ff1cb11020000f8d856634c9c8c</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+        <sys_created_on>2017-08-23 04:04:32</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>a3e892380f70c3805b8af45be1050e4f</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sp_instance_table_a3e892380f70c3805b8af45be1050e4f</sys_update_name>
+        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+        <sys_updated_on>2017-08-23 04:07:48</sys_updated_on>
+        <table>x_pvi_health_care_patient</table>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+</record_update>

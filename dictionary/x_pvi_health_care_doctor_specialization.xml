@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Doctor Specialization" max_length="40" name="x_pvi_health_care_doctor_specialization" type="collection">
+        <element label="Doctor ID" max_length="40" name="doctor_id" type="string"/>
+        <element display="true" label="Doctor name" max_length="32" name="doctor_name" reference="x_pvi_health_care_doctor" type="reference"/>
+        <element label="Experience" max_length="40" name="experience" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Qualification" max_length="40" name="qualification" type="string"/>
+        <element choice="1" label="Specialization" max_length="40" name="specialization" type="choice">
+            <choice>
+                <element label="Cardio" sequence="0" value="Cardio"/>
+                <element label="Neuro" sequence="1" value="Neuro"/>
+                <element label="ophthalmology" sequence="2" value="ophthalmology"/>
+            </choice>
+        </element>
+        <element choice="1" label="Specialization type" max_length="40" name="specialization_type" type="choice">
+            <choice>
+                <element label="Major" sequence="0" value="Major"/>
+                <element label="Additional" sequence="1" value="Additional"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="doctor_name"/>
+        </index>
+    </element>
+</database>

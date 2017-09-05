@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_pvi_health_care_staff_profile" version="2" view="care_view">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Staff Profile - care view" name="x_pvi_health_care_staff_profile" related_list="NULL" sys_domain="global" view="04865c020f048b005b8af45be1050e62">d46279e40f9803409948715be1050eb6</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>REL:d95c50460f048b005b8af45be1050efe</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-07-28 10:06:14</sys_created_on>
+            <sys_id>906279e40f9803409948715be1050eb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-07-28 10:06:14</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="Staff Profile - care view" name="x_pvi_health_care_staff_profile" related_list="NULL" sys_domain="global" view="04865c020f048b005b8af45be1050e62">d46279e40f9803409948715be1050eb6</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>REL:debf2d640f9803409948715be1050e1e</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-07-28 10:06:14</sys_created_on>
+            <sys_id>986279e40f9803409948715be1050eb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-07-28 10:06:14</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>Staff Profile - care view</calculated_name>
+            <filter/>
+            <name>x_pvi_health_care_staff_profile</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-07-28 10:06:14</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d46279e40f9803409948715be1050eb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Staff Profile - care view</sys_name>
+            <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+            <sys_update_name>sys_ui_related_x_pvi_health_care_staff_profile_care_view</sys_update_name>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-07-28 10:06:14</sys_updated_on>
+            <sys_user/>
+            <view display_value="care view" name="care_view">04865c020f048b005b8af45be1050e62</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

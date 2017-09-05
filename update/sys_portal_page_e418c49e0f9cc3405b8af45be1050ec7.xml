@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="sys_portal_page" unload_date="2017-09-05 07:07:28">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles/>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+        <sys_created_on>2017-08-02 12:51:07</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e418c49e0f9cc3405b8af45be1050ec7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA New Tab 2</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sys_portal_page_e418c49e0f9cc3405b8af45be1050ec7</sys_update_name>
+        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+        <sys_updated_on>2017-08-02 12:51:07</sys_updated_on>
+        <title>PA New Tab 2</title>
+        <user/>
+        <view>pa_new_tab_2_1</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone0</dropzone>
+                <offset>0</offset>
+                <page display_value="PA New Tab 2">e418c49e0f9cc3405b8af45be1050ec7</page>
+                <summary/>
+                <sys_created_by>saravanan.vijaykumar</sys_created_by>
+                <sys_created_on>2017-08-02 12:51:33</sys_created_on>
+                <sys_id>7228c89e0f9cc3405b8af45be1050ecc</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+                <sys_updated_on>2017-08-02 12:51:33</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2017-08-02 12:51:33">7228c89e0f9cc3405b8af45be1050ecc</portal_section>
+                        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+                        <sys_created_on>2017-08-02 12:51:33</sys_created_on>
+                        <sys_id>3628c89e0f9cc3405b8af45be1050ed1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+                        <sys_updated_on>2017-08-02 12:51:33</sys_updated_on>
+                        <value>graph</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2017-08-02 12:51:33">7228c89e0f9cc3405b8af45be1050ecc</portal_section>
+                        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+                        <sys_created_on>2017-08-02 12:51:33</sys_created_on>
+                        <sys_id>3a28c89e0f9cc3405b8af45be1050ed0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+                        <sys_updated_on>2017-08-02 12:51:33</sys_updated_on>
+                        <value>com.snc.pa.ui.RenderPerformanceAnalytics</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2017-08-02 12:51:33">7228c89e0f9cc3405b8af45be1050ecc</portal_section>
+                        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+                        <sys_created_on>2017-08-02 12:51:33</sys_created_on>
+                        <sys_id>3e28c89e0f9cc3405b8af45be1050ed1</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+                        <sys_updated_on>2017-08-02 12:51:33</sys_updated_on>
+                        <value>breakdown</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 2017-08-02 12:51:33">7228c89e0f9cc3405b8af45be1050ecc</portal_section>
+                        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+                        <sys_created_on>2017-08-02 12:51:33</sys_created_on>
+                        <sys_id>b228c89e0f9cc3405b8af45be1050ed2</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+                        <sys_updated_on>2017-08-02 12:51:33</sys_updated_on>
+                        <value>e418c49e0f9cc3405b8af45be1050ec7</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2017-08-02 12:51:33">7228c89e0f9cc3405b8af45be1050ecc</portal_section>
+                        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+                        <sys_created_on>2017-08-02 12:51:33</sys_created_on>
+                        <sys_id>be28c89e0f9cc3405b8af45be1050ed0</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+                        <sys_updated_on>2017-08-02 12:51:33</sys_updated_on>
+                        <value>pa_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2017-08-02 12:51:33">7228c89e0f9cc3405b8af45be1050ecc</portal_section>
+                        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+                        <sys_created_on>2017-08-02 12:51:33</sys_created_on>
+                        <sys_id>f228c89e0f9cc3405b8af45be1050ecc</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+                        <sys_updated_on>2017-08-02 12:51:33</sys_updated_on>
+                        <value>e447045e0f9cc3405b8af45be1050e52</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

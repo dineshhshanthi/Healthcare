@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="x_pvi_health_care_general_treatments" relationship="43e0dc8e0f088b009948715be1050e82" sys_domain="global" table="x_pvi_health_care_testing_task" version="2" view="">
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_pvi_health_care_testing_task</name>
+            <parent>x_pvi_health_care_general_treatments</parent>
+            <position/>
+            <relationship display_value="General treatment Related list">43e0dc8e0f088b009948715be1050e82</relationship>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>kamala.kannan</sys_created_by>
+            <sys_created_on>2017-08-02 09:42:43</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fcfc1b4a0f1807409948715be1050ece</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_pvi_health_care_testing_task</sys_name>
+            <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+            <sys_update_name>sys_ui_list_x_pvi_health_care_general_treatments_43e0dc8e0f088b009948715be1050e82_null</sys_update_name>
+            <sys_updated_by>kamala.kannan</sys_updated_by>
+            <sys_updated_on>2017-08-02 09:42:43</sys_updated_on>
+            <sys_user display_value="kamal ">9058dd510fcc0b009948715be1050e9d</sys_user>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

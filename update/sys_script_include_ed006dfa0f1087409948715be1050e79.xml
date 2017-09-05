@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_pvi_health_care.checktoken</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>checktoken</name>
+        <script><![CDATA[var checktoken = Class.create();
+checktoken.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	token:function()
+	{
+		var temp=this.getParameter('doc').split(":");
+		var v= new GlideRecord('x_pvi_health_care_appointment');
+				v.addQuery('appointment_slot',temp[0]);
+		v.addQuery('date',temp[1]);		
+		v.query();
+		var gt="";
+		v.next();
+		gs.addInfoMessage(temp[0]+"----"+temp[1]+"     "+v.date);
+	
+		if(v.next()){
+gs.addErrorMessage("Please select other slot");	
+			v.setAbortAction(true);
+				gt="false";
+		return false;
+			}else{
+				//gs.addInfoMessage("inserting");
+				v.initialize();
+				v.appointment_slot=temp[0];
+				v.date=temp[1];
+				v.doctor_name=temp[2];
+				v.patient=temp[3];
+				v.week_number=temp[4];
+				v.insert();
+				gs.addInfoMessage("Your slot has been booked");
+				gt="true";
+				return true;
+			}
+		
+		return gt;
+	},
+
+    type: 'checktoken'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>dinesh.kumarm</sys_created_by>
+        <sys_created_on>2017-08-04 08:32:51</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ed006dfa0f1087409948715be1050e79</sys_id>
+        <sys_mod_count>28</sys_mod_count>
+        <sys_name>checktoken</sys_name>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sys_script_include_ed006dfa0f1087409948715be1050e79</sys_update_name>
+        <sys_updated_by>dinesh.kumarm</sys_updated_by>
+        <sys_updated_on>2017-08-08 06:47:44</sys_updated_on>
+    </sys_script_include>
+</record_update>

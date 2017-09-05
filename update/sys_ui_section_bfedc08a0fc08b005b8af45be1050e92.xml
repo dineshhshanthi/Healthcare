@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="bfedc08a0fc08b005b8af45be1050e92" sys_domain="global" table="x_pvi_health_care_testing_activities" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>3db6089b0f004f005b8af45be1050e76</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>1</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>b1b6089b0f004f005b8af45be1050e77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <position>2</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>35b6089b0f004f005b8af45be1050e77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>test_name</element>
+            <position>3</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>b5b6089b0f004f005b8af45be1050e77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>test_type</element>
+            <position>4</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>39b6089b0f004f005b8af45be1050e77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>b9b6089b0f004f005b8af45be1050e77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>state</element>
+            <position>6</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>3db6089b0f004f005b8af45be1050e77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>7</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>bdb6089b0f004f005b8af45be1050e77</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent</element>
+            <position>8</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>31b6089b0f004f005b8af45be1050e78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>9</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>b1b6089b0f004f005b8af45be1050e78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>10</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>35b6089b0f004f005b8af45be1050e78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>11</position>
+            <sys_created_by>prasad.y</sys_created_by>
+            <sys_created_on>2017-07-24 05:03:26</sys_created_on>
+            <sys_id>b5b6089b0f004f005b8af45be1050e78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_pvi_health_care_testing_activities" sys_domain="global" view="Default view">bfedc08a0fc08b005b8af45be1050e92</sys_ui_section>
+            <sys_updated_by>prasad.y</sys_updated_by>
+            <sys_updated_on>2017-07-24 05:03:26</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_pvi_health_care_testing_activities</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-20 08:22:34</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bfedc08a0fc08b005b8af45be1050e92</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_pvi_health_care_testing_activities</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+            <sys_update_name>sys_ui_section_bfedc08a0fc08b005b8af45be1050e92</sys_update_name>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-20 08:22:34</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

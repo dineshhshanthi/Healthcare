@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="INSERT_OR_UPDATE">
+        <canvas_page/>
+        <name>Total duration of incident</name>
+        <page display_value="PA Total duration of incident">e294d1c80fec0b409948715be1050e83</page>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>flavian.arul</sys_created_by>
+        <sys_created_on>2017-08-08 04:54:52</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ae94d1c80fec0b409948715be1050e83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Total duration of incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>pa_tabs_ae94d1c80fec0b409948715be1050e83</sys_update_name>
+        <sys_updated_by>flavian.arul</sys_updated_by>
+        <sys_updated_on>2017-08-08 04:54:52</sys_updated_on>
+    </pa_tabs>
+</record_update>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="live_feed=true" extends="task" label="General treatments" max_length="40" name="x_pvi_health_care_general_treatments" sizeclass="13" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Category" mandatory="true" max_length="40" name="category" type="string">
+            <choice>
+                <element label="General" sequence="0" value="General"/>
+                <element label="Cardiology" sequence="1" value="Cardiology"/>
+                <element label="Neurology" sequence="2" value="Neurology"/>
+                <element label="Gynecology" sequence="3" value="Gynecology"/>
+                <element label="Orthopedics" sequence="4" value="Orthopedics"/>
+            </choice>
+        </element>
+        <element label="Doctor" max_length="32" name="doctor" reference="x_pvi_health_care_doctor" type="reference"/>
+        <element label="Patient" max_length="32" name="patient" reference="sys_user" type="reference"/>
+        <element choice="1" label="test state" max_length="40" name="test_state" type="choice">
+            <choice>
+                <element label="Consulting" value="11"/>
+                <element label="Testing" value="12"/>
+                <element label="Treatment" value="13"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Testing- Type" mandatory="true" max_length="40" name="test_type" type="string">
+            <choice>
+                <element label="Basic" sequence="0" value="Basic"/>
+                <element label="Standard" sequence="1" value="Standard"/>
+                <element label="Intensive" sequence="2" value="Intensive"/>
+                <element label="NoTest-required" sequence="3" value="NoTest-requried"/>
+            </choice>
+        </element>
+    </element>
+</database>

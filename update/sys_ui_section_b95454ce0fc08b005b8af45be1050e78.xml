@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Health care" section_id="b95454ce0fc08b005b8af45be1050e78" sys_domain="global" table="sys_user" version="3" view="Doctors">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name</element>
+            <position>0</position>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-21 06:01:31</sys_created_on>
+            <sys_id>d737f0960f04cb009948715be1050e6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Health care" display_value="Health care" name="sys_user" sys_domain="global" view="bc7c67710f808b005b8af45be1050ef6">b95454ce0fc08b005b8af45be1050e78</sys_ui_section>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-21 06:01:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_pvi_health_care_address</element>
+            <position>1</position>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-21 06:01:31</sys_created_on>
+            <sys_id>6f37f0960f04cb009948715be1050e6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Health care" display_value="Health care" name="sys_user" sys_domain="global" view="bc7c67710f808b005b8af45be1050ef6">b95454ce0fc08b005b8af45be1050e78</sys_ui_section>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-21 06:01:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_name</element>
+            <position>2</position>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-21 06:01:31</sys_created_on>
+            <sys_id>ef37f0960f04cb009948715be1050e6e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Health care" display_value="Health care" name="sys_user" sys_domain="global" view="bc7c67710f808b005b8af45be1050ef6">b95454ce0fc08b005b8af45be1050e78</sys_ui_section>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-21 06:01:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>email</element>
+            <position>3</position>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-21 06:01:31</sys_created_on>
+            <sys_id>6337f0960f04cb009948715be1050e6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Health care" display_value="Health care" name="sys_user" sys_domain="global" view="bc7c67710f808b005b8af45be1050ef6">b95454ce0fc08b005b8af45be1050e78</sys_ui_section>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-21 06:01:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>location</element>
+            <position>4</position>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-21 06:01:31</sys_created_on>
+            <sys_id>e337f0960f04cb009948715be1050e6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Health care" display_value="Health care" name="sys_user" sys_domain="global" view="bc7c67710f808b005b8af45be1050ef6">b95454ce0fc08b005b8af45be1050e78</sys_ui_section>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-21 06:01:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>user_password</element>
+            <position>5</position>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-21 06:01:31</sys_created_on>
+            <sys_id>6737f0960f04cb009948715be1050e6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Health care" display_value="Health care" name="sys_user" sys_domain="global" view="bc7c67710f808b005b8af45be1050ef6">b95454ce0fc08b005b8af45be1050e78</sys_ui_section>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-21 06:01:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>time_zone</element>
+            <position>6</position>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-21 06:01:31</sys_created_on>
+            <sys_id>e737f0960f04cb009948715be1050e6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Health care" display_value="Health care" name="sys_user" sys_domain="global" view="bc7c67710f808b005b8af45be1050ef6">b95454ce0fc08b005b8af45be1050e78</sys_ui_section>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-21 06:01:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gender</element>
+            <position>7</position>
+            <sys_created_by>saravanan.vijaykumar</sys_created_by>
+            <sys_created_on>2017-07-21 06:01:31</sys_created_on>
+            <sys_id>6b37f0960f04cb009948715be1050e6f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Health care" display_value="Health care" name="sys_user" sys_domain="global" view="bc7c67710f808b005b8af45be1050ef6">b95454ce0fc08b005b8af45be1050e78</sys_ui_section>
+            <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+            <sys_updated_on>2017-07-21 06:01:31</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Health care</caption>
+            <header>false</header>
+            <name>sys_user</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>bala.kannan</sys_created_by>
+            <sys_created_on>2017-07-20 08:50:33</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b95454ce0fc08b005b8af45be1050e78</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Health care</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+            <sys_update_name>sys_ui_section_b95454ce0fc08b005b8af45be1050e78</sys_update_name>
+            <sys_updated_by>bala.kannan</sys_updated_by>
+            <sys_updated_on>2017-07-20 08:50:33</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Doctors" name="Doctors">bc7c67710f808b005b8af45be1050ef6</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

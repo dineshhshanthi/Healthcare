@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>appointment_slot</field>
+        <global>true</global>
+        <messages/>
+        <name>Check Token</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	//var a;
+var var1=g_form.getValue("appointment_slot");
+var var2=g_form.getValue("date");
+	var var3=g_form.getValue('doctor_name');
+	var var4=g_form.getValue('patient');
+	var var5=g_form.getValue('week_number');
+	
+	var var6=var1+":"+var2+":"+var3+":"+var4+":"+var5;
+
+	
+	var v=new GlideAjax('checktoken');
+	v.addParam('sysparm_name','token');
+	
+	v.addParam('doc',var6);
+
+	v.getXML(clientfun);
+
+	
+	function clientfun(response) {
+   var answer= response.responseXML.documentElement.getAttribute("answer");
+
+	if(answer == "true")
+		location.reload();
+	
+	
+	}
+	 //alert(tem+"_"+typeof(tem));
+	//return tem;
+	//document.getElementById("x_91375_hospital_m_schedule_per_hour.do").reset();
+	//document.getElementById(").reset();
+	return true;
+	}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>dinesh.kumarm</sys_created_by>
+        <sys_created_on>2017-08-04 06:50:33</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba98497e0fdc47409948715be1050e9a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Check Token</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sys_script_client_ba98497e0fdc47409948715be1050e9a</sys_update_name>
+        <sys_updated_by>dinesh.kumarm</sys_updated_by>
+        <sys_updated_on>2017-08-04 08:35:05</sys_updated_on>
+        <table>x_pvi_health_care_day_schedule</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

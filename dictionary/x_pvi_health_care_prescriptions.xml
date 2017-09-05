@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Prescriptions" max_length="40" name="x_pvi_health_care_prescriptions" type="collection">
+        <element label="Descriptions" max_length="1200" name="descriptions" type="string"/>
+        <element label="patient name" max_length="40" name="patient_name" type="string"/>
+    </element>
+</database>

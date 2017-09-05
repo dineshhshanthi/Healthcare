@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope) {
+  /* widget controller */
+  var c = this;
+	var time=$scope.data.st;
+	var name=$scope.data.st1;
+var s;
+	var s1;
+s=time.split('-');
+	s1=name.split('-');
+	alert(s1);
+	var tod=$scope.data.sam;
+	//alert(tod);
+
+	
+	
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>
+		#abc{
+			width: 100px;
+			height: 30px;
+			}
+
+		.row1cell, .row2cell{
+		
+		background:green;
+		color:white;
+		}
+		input[type="text"]
+		{
+	 text-align: center;
+		}
+			.container{
+				width:100%;
+			}
+			.row1cell{
+			width: 80px;
+			}
+			
+			.row1cell
+			{
+			
+			text_align: center;
+			}
+	</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>slot_details</id>
+        <internal>false</internal>
+        <link/>
+        <name>Slot details</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {	
+	i=0;
+	
+		var slot;
+		 var temp;
+		 var temp1;
+	var st;
+	var st1;
+
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd = '0'+dd
+		
+} 
+
+if(mm<10) {
+    mm = '0'+mm
+} 
+	dd++;
+
+today = yyyy + '-' + mm + '-' + dd;
+	var sam;
+	data.sam=today;
+	
+		
+v1=new GlideRecord("x_pvi_health_care_appointment");
+v1.addQuery("date",today);
+v1.query();	
+v1.next();
+		while(v1.next())
+		{			
+
+		slot=v1.appointment_slot;
+			//slot.toString();
+			data.st+=slot+"-"
+			temp=v1.patient;	
+	data.st1+=temp+"-";
+	
+			i++;	
+	
+					
+	
+		}
+	//gs.addInfoMessage(data.st+"  "+data.st1);
+			
+			
+		
+	
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>dinesh.kumarm</sys_created_by>
+        <sys_created_on>2017-08-08 12:13:54</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>7119f2c00f244b409948715be1050e0a</sys_id>
+        <sys_mod_count>171</sys_mod_count>
+        <sys_name>Slot details</sys_name>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sp_widget_7119f2c00f244b409948715be1050e0a</sys_update_name>
+        <sys_updated_by>dinesh.kumarm</sys_updated_by>
+        <sys_updated_on>2017-08-23 08:27:22</sys_updated_on>
+        <template><![CDATA[
+<div class="container">
+	<table cellspacing="2" >
+      <div class="row1" ><tr><td  style="background:green"><label style="text-align:center" id="abc" class="row1cell" >Date</label></td>
+        <td style="text-align:center" class="row1cell" id="a1" value="9A.M" > 9A.M</td>
+        <td style="text-align:center" class="row1cell"  id="a2" value="10A.M">10A.M</td>
+        <td style="text-align:center" class="row1cell" id="a3" value="11A.M">11A.M</td>
+        <td style="text-align:center" class="row1cell" id="a4" value="12P.M">12P.M</td>
+        <td style="text-align:center" class="row1cell" id="a5" value="1P.M">1P.M</td>
+         <td style="text-align:center" class="row1cell" id="a6" value="2P.M">2P.M</td>
+         <td style="text-align:center" class="row1cell" id="a7" value="3P.M">3P.M</td>
+         <td style="text-align:center" class="row1cell" id="a8" value="4P.M">4P.M</td>
+        <td style="text-align:center" class="row1cell" id="a9" value="5P.M">5P.M</td> </tr>
+		<p>
+			<br>
+		  <tr  >  <td id="sunday0"  style="background:green" ><label id="l1" style="color:white">Patient Name</label></td>
+        <td  ><input type="text" id="b1"/></td>
+        <td  ><input type="text" id="b2"/>dinesh.kumarm</td>
+        <td  ><input type="text" id="b3"/></td>
+        <td  ><input type="text" id="b4"/></td>
+         <td  ><input type="text" id="b5"/></td>
+        <td  ><input type="text" id="b6"/>bala.kannan</td>
+        <td  ><input type="text"  id="b7"/></td>
+        <td  ><input type="text"  id="b8" />bala.kannan</td>
+        <td   ><input type="text" id="b9"/></td>
+        </tr>
+			</br>
+		  </p>
+		</div>
+		
+		  </table>
+	</div>
+	]]></template>
+    </sp_widget>
+</record_update>

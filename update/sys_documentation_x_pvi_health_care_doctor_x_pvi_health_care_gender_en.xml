@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="x_pvi_health_care_gender" label="Gender(x_pvi_health_care_gender)" language="en" table="x_pvi_health_care_doctor">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>x_pvi_health_care_gender</element>
+            <help/>
+            <hint/>
+            <label>Gender(x_pvi_health_care_gender)</label>
+            <language>en</language>
+            <name>x_pvi_health_care_doctor</name>
+            <plural>Gender(x_pvi_health_care_gender)</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>bala.kannan</sys_created_by>
+            <sys_created_on>2017-08-08 12:47:40</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_id>dcd043880f244b409948715be1050e0e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Gender(x_pvi_health_care_gender)</sys_name>
+            <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+            <sys_update_name>sys_documentation_x_pvi_health_care_doctor_x_pvi_health_care_gender_en</sys_update_name>
+            <sys_updated_by>bala.kannan</sys_updated_by>
+            <sys_updated_on>2017-08-08 12:47:40</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_page">
+    <sys_ui_page action="INSERT_OR_UPDATE">
+        <category>general</category>
+        <client_script><![CDATA[// setting date in UI Page
+
+var var3=g_form.getValue("date");
+var var4=g_form.getValue("appointment_slot");
+
+
+document.getElementById("abc").innerHTML=var3;
+	
+
+v=new GlideRecord("x_pvi_health_care_appointment");
+
+
+v.addQuery("date",var3);
+v.query();
+
+
+while(v.next())
+	{
+		
+var v1=new GlideRecord("x_pvi_health_care_patient");
+v1.addQuery("sys_id",v.patient);
+v1.query();
+					//alert("checkpoint 1");
+		if(v1.next())
+			//alert(v1.user_name);
+		var slot=v.appointment_slot;
+//alert("checkpoint 2");
+		for(i=1;i<10;i++)
+	{
+	var concat1="a"+i;
+	var buffer1=document.getElementById(concat1).innerHTML;
+	//alert(buffer1);
+		if(buffer1==slot)
+			{
+				//alert("checkpoint 3");
+				var concat2="b"+i;
+				v1.next();
+				document.getElementById(concat2).value=v1.x_pvi_health_care_user_id;
+				//alert(v1.user_name);
+			}
+	
+	
+	}
+	
+	}
+
+]]></client_script>
+        <description/>
+        <direct>false</direct>
+        <endpoint>x_pvi_health_care_Doctor Availability.do</endpoint>
+        <html><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+    <div class="container">
+	<table cellspacing="2" >
+      <div class="row1" ><tr><td  style="background:green"><label style="text-align:center" id="abc" class="row1cell" >Date</label></td>
+        <td style="text-align:center" class="row1cell" id="a1" value="9A.M" > 9A.M</td>
+        <td style="text-align:center" class="row1cell"  id="a2" value="10A.M">10A.M</td>
+        <td style="text-align:center" class="row1cell" id="a3" value="11A.M">11A.M</td>
+        <td style="text-align:center" class="row1cell" id="a4" value="12P.M">12P.M</td>
+        <td style="text-align:center" class="row1cell" id="a5" value="1P.M">1P.M</td>
+         <td style="text-align:center" class="row1cell" id="a6" value="2P.M">2P.M</td>
+         <td style="text-align:center" class="row1cell" id="a7" value="3P.M">3P.M</td>
+         <td style="text-align:center" class="row1cell" id="a8" value="4P.M">4P.M</td>
+        <td style="text-align:center" class="row1cell" id="a9" value="5P.M">5P.M</td> </tr>
+		<p>
+			<br>
+		  <tr  >  <td id="sunday0"  style="background:green" ><label id="l1" style="color:white">Patient Name</label></td>
+        <td  ><input type="text" id="b1"/></td>
+        <td  ><input type="text" id="b2"/></td>
+        <td  ><input type="text" id="b3"/></td>
+        <td  ><input type="text" id="b4"/></td>
+         <td  ><input type="text" id="b5"/></td>
+        <td  ><input type="text" id="b6"/></td>
+        <td  ><input type="text"  id="b7"/></td>
+        <td  ><input type="text"  id="b8" /></td>
+        <td   ><input type="text" id="b9"/></td>
+        </tr>
+			</br>
+		  </p>
+		</div>
+		
+		  </table>
+	</div>
+		<style>
+		#abc{
+			width: 100px;
+			height: 30px;
+			}
+
+		.row1cell, .row2cell{
+		
+		background:green;
+		color:white;
+		}
+		input[type="text"]
+		{
+	 text-align: center;
+		}
+			.container{
+				width:100%;
+			}
+			.row1cell{
+			width: 80px;
+			}
+			
+			.row1cell
+			{
+			
+			text_align: center;
+			}
+			
+		</style>
+        
+</j:jelly>]]></html>
+        <name>Doctor Availability</name>
+        <processing_script/>
+        <sys_class_name>sys_ui_page</sys_class_name>
+        <sys_created_by>dinesh.kumarm</sys_created_by>
+        <sys_created_on>2017-07-28 05:47:28</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>2ee6f46c0fd403409948715be1050ed5</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>Doctor Availability</sys_name>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sys_ui_page_2ee6f46c0fd403409948715be1050ed5</sys_update_name>
+        <sys_updated_by>dinesh.kumarm</sys_updated_by>
+        <sys_updated_on>2017-08-04 13:00:47</sys_updated_on>
+    </sys_ui_page>
+</record_update>

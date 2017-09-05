@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function() {  /* widget controller */  var c = this;}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 8888; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%; /* Could be more or less, depending on screen size */
+}
+@media (min-width: 1366px) {
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10vh auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%; /* Could be more or less, depending on screen size */
+    }
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button.button {
+    background:none;
+  border-top:none;
+  border-right:none;
+  border-left:none;
+  border-bottom:#02274a 1px solid;
+  padding:0 0 3px 0;
+  font-size:16px;
+}
+
+button.button:hover {
+  border-bottom:#a99567 1px solid;
+  color:#a99567;
+}
+.wrapper
+{
+  max-width : 100%
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>doctor_article</id>
+        <internal>false</internal>
+        <link/>
+        <name>doctor article</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>dinesh.kumarm</sys_created_by>
+        <sys_created_on>2017-08-21 08:56:26</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>3f88c5940f3c43805b8af45be1050e23</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>doctor article</sys_name>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sp_widget_3f88c5940f3c43805b8af45be1050e23</sys_update_name>
+        <sys_updated_by>dinesh.kumarm</sys_updated_by>
+        <sys_updated_on>2017-08-28 09:52:33</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+</div><h3><font color="#000000">
+  <b>Knowledge Articles</b></font>
+</h3>
+<div class="list-group" id="list-group">
+
+  <button id="myBtn" class="list-group-item button" data-modal="modalOne">
+		<span class="fa-stack fa-lg">
+		<i class="fa-stack-2x fa fa-circle "></i>
+		<i class="fa-stack-1x text-danger fa fa-envelope "></i>
+		</span>
+		<span style="color:#000000" class="">Cardiology</span>
+  </button>
+
+ <button id="myBtn" class="list-group-item button" data-modal="modalTwo">
+		<span class="fa-stack fa-lg">
+		<i class="fa-stack-2x fa fa-circle "></i>
+		<i class="fa-stack-1x text-danger fa fa-envelope "></i>
+		</span>
+		<span  style="color:#000000" class="">Neurology</span>
+  </button>
+  
+   <button id="myBtn" class="list-group-item button" data-modal="modalThree">
+		<span class="fa-stack fa-lg">
+		<i class="fa-stack-2x fa fa-circle "></i>
+		<i class="fa-stack-1x text-danger fa fa-envelope "></i>
+		</span>
+		<span  style="color:#000000" class="">Pediatric</span>
+  </button>
+
+<div id="modalOne" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <a class="close">&times;</a>
+      
+     <h4 align="center">
+      Cardiology
+      </h4> 
+      <p>          At the outset, let us begin with a very simple question – How many of you know about Chelation therapy ? The reality is many of you would not even heard about this phrase till now and hence are completely unaware about the wonderful services and benefits it can render. Chelation therapy is not based on chances or random successes and it has its roots firmly gripped by medical science.
+
+Having rendered treatment for cardiovascular diseases and other chronic ailments through Chelation therapy in our clinic to numerous patients, we are glad to witness them enjoying their new lease of life without having to undergo invasive procedures. Too good to believe? Well, it is high time we present you the complete picture of Chelation therapy and help you understand how this simple but effective non invasive treatment can provide you a better life.
+
+<p>
+  
+     <b>What is Chelation Therapy?</b> 
+ 
+Chelation therapy is an alternative medicine based on a chemical process to remove toxic metals and minerals in our body. The Greek word ‘Chelo’ translates as ‘claw’ and hence the process of Chelation therapy involves grabbing minerals and heavy metals such as mercury, lead, arsenic, cadmium, calcium, copper, iron and many more. So what is used in this process to pull these heavy metals and minerals? EDTA – ethylenediaminetetraacetic acid, a water soluble amino acid complex, is the main solution that is injected into the body for detoxification or coronary heart disease treatment.</p>
+ </p>
+    
+      <b>Uses of Chelation Therapy</b>
+So, how does Chelation therapy helps our body by grabbing calcium or other heavy metals? A valid question that needs to be addressed immediately before we proceed any further in elaborating about this non invasive heart surgery treatment. Due to sedentary lifestyle practices or improper diet habits, cholesterol combines with fat and calcium and forms plaques. These plaques slowly build up along the inner walls of the arteries and narrow the path available for blood flow. Most of the coronary heart diseases or other associated ailments start marking their presence when the flow of oxygenated blood to heart gets disturbed due to the narrowing of arteries. With the help of this non invasive treatment, also aptly known as artery clearance therapy, EDTA solution binds with calcium plaques that are blocking those arteries and gets swept away and thereby improves blood flow.
+
+<b>For Cardiovascular Diseases (Heart Diseases)</b>
+Angina: Angina is often referred as chest pain; in reality, the pain caused by angina extends up to arms, neck and even throat. Primarily due to restricted blood flow in plaque congested arteries, angina can be effectively relieved through Chelation therapy. It should be borne in the mind that regular bouts of angina are symptoms of underlying heart diseases and hence a timely cardiovascular disease treatment through Chelation therapy may prevent the occurrence of heart attacks or strokes.
+Arrhythmias: Arrhythmias, rhythm of heartbeat becoming erratic or too fast or slow, is a very minor problem, but it can turn out to be a major concern for those who have heart problems. Remember, we are not talking about experiencing occasional symptoms of arrhythmias during strong emotions or physical exertions, as they are quite normal and do not pose any sort of problem. But proper care through Chelation therapy is required when cardiac arrhythmias is experienced due to coronary artery disease.
+    
+  
+    
+      <div class="wrapper">
+        
+    
+      <img src="http://punechelation.com/wp-content/uploads/2016/10/Before-After-Chelation-Therapy.jpg" width="500" height="200" align="middle" class="img-responsive">
+    </div>
+    <p>
+      Heart Attack: Isn’t it a wonderful news that Chelation therapy can prevent heart attack. In the first place, let us understand why heart attack happens. When oxygen rich blood flow is completely cut off to a section of heart due to blockage in arteries, the heart muscle starves for oxygen. Unfortunately, if heart block treatment is not provided at the appropriate time, the cells in heart muscles die and lead to permanent damage. It should be borne in the mind that arteries get blocked due to build up of plaques and it is a very slow process. With alternative treatment for heart block in the form of Chelation therapy as the rescue, it is quite possible to clear those blockages and completely prevent the occurrence of heart attacks.
+Stroke: The restricted blood flow due to blocked arteries not only can cause malfunctioning of heart, but also deprive blood supply to brain and thereby cause Ischemic strokes. As Chelation therapy targets the complete stretch of arteries to all parts of the body, it cleans the plaques and hence paves way for free and normal flow of blood to all parts of body including brain.
+Hypertension (High Blood Pressure): Hypertension or commonly known as high blood pressure occurs when the force of blood is in elevated condition due to the restrictions posed by the plaques along the arteries. As EDTA is administered through Chelation therapy, it helps in removing calcium complex plaques, and also facilitates arteries to retain their original size and attain elasticity. With blood flow getting streamlined due to de-clogged arteries, the blood pressure automatically comes back to a healthy level.
+Atherosclerosis: When arteries get narrowed and hardened due to build up of plaques, it seriously compromises proper flow of blood. As this condition, medically referred as atherosclerosis, progresses all over the body, it not only poses risk for heart but also can lead to strokes or other cardiovascular diseases. Chelation therapy provides wonderful opportunity to flush out all blockage causing plaques across the arteries and thereby drastically brings down the risk factors for the occurrence of cardiovascular diseases.
+      
+    </p>
+    
+
+    </div>
+  </div>
+</div>
+
+<div id="modalTwo" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <span class="close">&times;</span>
+      <h4 align="center">
+       Neurology
+      </h4>
+       <p>
+     <p>
+       
+       <b>Common Neural disease</b>
+      </p>
+      <p> <b>   1. Alzheimer’s</b></p>
+alzheimer's disease
+
+The most common neurological disorder is definitely Alzheimer’s, with a large number of senior citizens being diagnosed with the same each year, all over the world. Also known as AD, Alzheimer’s disease is a type of neurodegenerative disease, which means that while it starts off slow, the condition really worsens with time. While the time it takes to move from the first stage to the really bad one can vary from person to person, the average life expectancy after the diagnosis is about 3 to 9 years.
+
+ 
+
+Symptoms
+
+Short term memory loss, or problems in remembering regular things
+Difficulty in speaking
+Sudden mood swings
+Unable to remember places or directions
+Starting something but forgetting to complete the same
+Not able to take care of self
+      <p><b>2. Migraine</b></p>
+migraine
+
+While you may not think of migraine as a neurological disease, it is a very common condition that affects a lot of people, and almost three times the number of women as men. Migraine is a condition where you feel a throbbing in one part of the head or extreme pain and pulsing. It is a type of extreme sensitivity towards loud noises and harsh lights that can cause severe headaches along with other symptoms. In many cases, patients are able to understand when a migraine is about to begin, as there is almost always a difficulty in vision. It mostly affects one part of the head and can last from an hour to as long as 72 hours!
+
+ 
+
+Symptoms
+
+Light or severe sensitivity to light
+Nausea
+Throbbing pain in one part of the head or at the temples
+Difficulty in vision
+Vision going black
+Seeing blurry or seeing lines in vision
+Severe sensitivity to smell or sound
+      <p><b>3. Parkinson’s Disease</b></p>
+parkinson disease
+
+Parkinson’s Disease, also known as PD, falls under a group of diseases that are known as motor system disorders. It is a type of disorder where the symptoms take time to show up, and slowly progress from start to getting worse. Genetic build as well as certain environmental causes are thought to increase the chances of getting affected with PD. Those who have a family member who has suffered PD are also at a higher risk.
+
+ 
+
+Symptoms
+
+Dementia and forgetfulness  
+Problems with sleep
+Anxiety
+Depression
+Emotional upheaval and sudden mood swings
+Problem in walking
+Mild or severe shaking of the hands, tremors
+Sensory issues
+      <p><b>4. Epilepsy</b></p>
+epilepsy
+
+Another very common condition that afflicts a lot of people is epilepsy, which leads to epileptic seizures. The seizures can be for a little while, or take a long time to subside. While the cause is unknown, it can sometimes be caused after an injury to the brain, after a stroke, some form of infection to the brain or some form of birth defect. The seizures can repeat often or in some cases be a one or twice affair.
+
+ 
+
+Symptoms
+
+Fainting
+Sudden tremors especially in the hands and legs
+Sudden confusion for short term
+Staring at a fixed spot and not realizing
+Not aware of immediate environment or situation
+      <p><b>5. Brain Tumour</b></p>
+brain tumour
+
+Brain tumour is a type of growth that in the brain cells which goes out of control and grows at a random pace. While there is no known cause why a brain tumour happens, it is also very difficult to understand who is at risk. While almost half of the brain cancer cases are not cancerous, they can be removed with the help of surgery. Removing the tumour can help the patient lead a better life and also improve life expectancy.
+
+ 
+
+Symptoms
+
+New occurrence of headaches or difference in the type of headaches experienced till date
+Increase in the severity of headaches
+Nausea or vomiting without any explained reason
+Problems in vision, blurry vision, temporary loss of vision
+Gradual problem in movement or sensation
+Problems with speech
+Problems with balancing
+While the above symptoms may not necessarily mean you have the condition, make sure you consult a doctor and get an assessment done, especially if you experience more than one of the above symptoms.
+      <div class="wrapper"><img src="https://qph.ec.quoracdn.net/main-qimg-3ca65fe12475ec30f88021b9585d56b4-c" width="500" height="200" align="middle" class="img-responsive"></p>      
+      
+    </div>
+  </div>
+</div>
+  <div id="modalThree" class="modal">
+  <div class="modal-content">
+    <div class="contact-form">
+      <span class="close">&times;</span>
+      <h4 align="center">
+        Pediatric
+      </h4>
+      <p>
+        The following information is not intended to replace office visits or calls if your child is ill, but rather to reinforce our instructions on certain common problems.
+Fever
+
+Fever is a temperature of 101 degrees, or in the case of an infant 2 m old, 100.5 or higher. This is an extremely common symptom of almost any illness in children. The fever can sometimes be very high even with a minor viral illness. Children with fevers almost always look sick, and usually return to their baseline activity when the fever comes down. Your best test of how serious a child's illness is, is not the height of the fever, but rather how sick he/she looks once the fever is reduced. Fever control can best be accomplished with acetaminophen (Tylenol, Tempra, etc.) or ibuprofen (Children's Motrin, Children's Advil). Acetaminophen should always be used in cases of vomiting, chicken pox, and influenza unless directed otherwise. Aspirin should never be used in children because of the risk of Reye's syndrome. Fever itself is not harmful-- it just makes you feel miserable. Treatment of the fever is only to make the child feel better.
+Diagnosis of the cause of fever usually requires us to examine your child. Antibiotics are reserved only for illnesses in which a bacterial illness is suspected, and are never prescribed over the phone, since we want to ensure we know what exactly we are treating. This will also enable us to choose the best drug for your child. Viral illnesses, such as colds and flu, are totally unresponsive to antibiotics, and there use may worsen the symptoms; or worse, mask something much more serious.
+
+The following table is a summary of doses for acetaminophen, and is dosed every 4 hours:
+
+Wt in Lbs              Acetamin Drops                  Acetamin Liquid                                Acetamin Chew
+                                (80 mg/0.8cc)                       (160 mg/tsp)                                         (80 mg/chewable)
+under 12                                Consult Doctor                     Consult Doctor
+12-18                                     0.8cc                                      1/2 tsp                                                    --
+18-26                                     1.2cc                                      3/4 tsp                                                    --
+26-35                                     1.6cc                                      1 tsp                                                       2
+35-50                                     --                                             1 1/2 tsp                                                3
+50-75                                     --                                             2 tsp                                                      4
+75-90                                     --                                             1 adult tab                                            6
+90-110                                   --                                             1 1/2 adult tab                                     7
+over 110                                                --                              2 adult tab                                            8
+              
+The following is a table for ibuprofen, dosed every 4 to 6 hours:
+Wt in Lbs                                              Ibuprofen Susp                                   Ibuprofen Chewables
+(100 mg/tsp)                                         (100 mg chewables)
+under 12                                                Consult Doctor                                     Consult Doctor
+12-18                                                     1/2 tsp                                                                    --
+18-26                                                     3/4 tsp                                                                    --
+26-35                                                     1 tsp                                                                       1
+35-50                                                     1 1/2 tsp                                                                 1 1/2
+50-75                                                     2 tsp                                                                       2
+75-90                                                     3 tsp                                                                       3
+90-110                                                   --                                                                             4
+over 110                                                                --                                                             2 adult tabs
+
+The following are potentially dangerous signs to watch for:
+
+* any fever in an infant under 3 months of age
+* fever accompanied by a headache and stiff neck
+* seizures with a fever
+* lethargy or difficulty in arousing child
+* fever of 105 degrees or over
+* fever that does not respond to acetaminophen within 1 hour
+
+When your child has a fever, extra fluids are needed to make up for increased losses. Don't worry if he/she won't take solid food. Dress comfortably, but not warmly. A lukewarm bath may also help bring the temperature down. Do not use alcohol rubs or ice water. Anytime your child shivers in the tub is time to increase the water temperature, because shivering will actually make the temperature rise.
+[return to top]
+
+Colds
+
+Colds, or upper respiratory viral infections, are probably the most common illnesses your child will contract. By their very nature they are extremely contagious and are easily passed from person to person. Most colds pass on their own in 7-10 days without any major problems, except to make your child feel miserable. During the first few days, as with many viral illnesses, children tend to run a temperature with initially a clear runny nose and cough due to post-nasal drip. The fever should respond fairly well with acetaminophen, and usually go down after the first 48 hours. We tend to wait it out the first few days of fever as long as it responds to acetaminophen and the child otherwise appears reasonably normal when it is down.
+Treatment for a cold is symptomatic. Acetaminophen should be used for a temperature. Nasal suctioning with salt water drops should be done with a bulb aspirator if the child cannot blow his/her nose and lots of fluids given. Many children will lose their appetite while they are sick, and that is alright as long as they are taking fluids. The head should be elevated at nighttime by angleing the crib mattress or using a pillow in older children. A cool mist vaporizor should be used if the air is dry. Most of the time these measures will at least make the child more comfortable.
+
+Cold medicines, even though they are an immense industry, tend to not be remarkably helpful. For children under 24 months old we do not recommend any over-the-counter medication because it tends to make them irritable. The choices for cold medications are immense, and we can help you with making a choice, if you would like to try them, during regular office hours.
+
+The following are warning signs to watch out for:
+* Temperature greater than two days, >101 degrees
+* Temperature that does not respond with acetaminophen  in 2 hours
+* Difficulty breathing even with appropriate suctioning
+* Wheezing or seeing the chest sucking in with rapid breaths
+* Lethargy
+[return to top]
+
+Diarrhea and Vomiting (Gastroenteritis)
+
+Gastroenteritis is a common pediatric problem usually resulting from a viral illness. When your child has diarrhea, fever, and vomiting, he/she is not able to tolerate a normal diet, and continuing it will make it worse. Medications used in adults, such as Kaopectate, Pepto Bismol, Immodium, etc., should not be used in children. They do not help and may cause very serious and dangerous complications. If your child is vomiting, we will recommend initially only feeding clear liquids:
+
+* Pedialyte or Infalyte for infants (available in drug stores and grocery stores)
+* Gatorade or other sports drink for older children
+* Kool-Aid or similar powdered drink
+* Flat soda (not diet)
+* Jell-O or Jell-O water
+* Popsicles
+* Caffeine free tea with sugar
+* Water or ice chips
+* Clear soup broth or bouillon
+
+Do not offer your child milk or juice, since these are hard to digest and probably will make the diarrhea and vomiting worse. A thirsty child may try to drink a large quantity of fluid at once and then promptly throw it back up. It is better to offer small quantities frequently-- sometimes as little as a tablespoon every 10 minutes, until the vomiting subsides.
+
+The following are warning signs to watch for:
+* persistent vomiting without diarrhea
+* extreme sleepiness
+* dry mouth, no urine output for 8 hours, dry eyes
+* severe abdominal pain
+* blood or bile in vomitus (green colored), blood in stool
+* inability to retain clear liquids after 6 hours
+* symptoms which worsen or do not improve after 2 days (1 day for infants)
+If any of the above occur, call us back immediately. When the vomiting stops for 4 to 6 hours, we recommend starting a solid diet gradually, with starchy foods first. These are rice, noodles, toast, saltines, bananas, applesauce, and Rice Krispies. As long as diarrhea is present, which can last 1 to 2 weeks, it is best not to introduce juice or milk products. A regular diet can be introduced over the next few days.
+For infants, a soy formula (Isomil, Prosobee, Nursoy) will be better tolerated than a milk based formula until fully recovered.
+[return to top]
+
+Safety and Poisonings
+
+Accidents are the leading cause of death in children, and dangerous conditions in your home, yard, and car must constantly be watched for. Open stairways, swimming pools, and electrical outlets are obvious dangers, but you must be on the constant lookout for more subtle things-- vitamins, birth control pills, acetaminophen or aspirin left on the table; a tiny pin or screw which could be swallowed; cleaning materials that can be reached on counters or cabinets; kerosene stored in a pop bottle; water temperature set > 120 degrees. It may be an annoyance to strap a complaining child into a car seat on every trip, but it is worth it when you realize that a proper restraint is his/her only hope of survival in an accident. Same goes for a bike helmet.
+
+Poisonings are very common accidents and can have dire consequences if not handled appropriately. Prevention is best. Be sure to discard any unused medicines. Store all medicines in labeled child proof containers (these can be obtained from the drugstore) and out of reach of your children-- high up and preferably in a locked cabinet. Do not allow the child in the same room when using these products, and do not store any of them in pop bottles, etc. Not only are they more inviting this way, but you have lost the ingredient label as well. Some plants in and out of the house also may be poisonous.
+If ingestion occurs, please do the following:
+
+1) Remove the child from the toxin, and remove any of it from the mouth.
+2) Bring both the child and substance to the phone, and call the poison control center (800-222-1222).
+3) Try and tell them what was ingested, how much was taken, when and what condition the child is in now.
+       </p>
+    </div>
+  </div>
+</div>
+<script>
+var modalBtns = [...document.querySelectorAll(".button")];
+modalBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.getAttribute('data-modal');
+    document.getElementById(modal).style.display = "block";
+  }
+});
+
+var closeBtns = [...document.querySelectorAll(".close")];
+closeBtns.forEach(function(btn){
+  btn.onclick = function() {
+    var modal = btn.closest('.modal');
+    modal.style.display = "none";
+  }
+});
+
+window.onclick = function(event) {
+  if (event.target.className === "modal") {
+    event.target.style.display = "none";
+  }
+}
+</script>]]></template>
+    </sp_widget>
+</record_update>

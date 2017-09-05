@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Additional Qualification" max_length="40" name="x_pvi_health_care_additional_qualification" type="collection">
+        <element display="true" label="Department" max_length="32" name="department" reference="x_pvi_health_care_hospital_department" type="reference"/>
+        <element label="Endorsement" max_length="100" name="endorsement" type="journal_input"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
+    </element>
+</database>

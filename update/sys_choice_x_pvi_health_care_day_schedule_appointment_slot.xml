@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="appointment_slot" table="x_pvi_health_care_day_schedule" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>appointment_slot</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>9A.M</label>
+            <language>en</language>
+            <name>x_pvi_health_care_day_schedule</name>
+            <sequence>0</sequence>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-08-04 07:02:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c6bc5fe0fdc47409948715be1050ee7</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-08-04 08:26:24</sys_updated_on>
+            <value>9A.M</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>appointment_slot</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>10A.M</label>
+            <language>en</language>
+            <name>x_pvi_health_care_day_schedule</name>
+            <sequence>1</sequence>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-08-04 07:02:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>707bc5fe0fdc47409948715be1050e90</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-08-04 08:26:30</sys_updated_on>
+            <value>10A.M</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>appointment_slot</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>11A.M</label>
+            <language>en</language>
+            <name>x_pvi_health_care_day_schedule</name>
+            <sequence>2</sequence>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-08-04 07:03:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>198b09fe0fdc47409948715be1050ecd</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-08-04 08:26:35</sys_updated_on>
+            <value>11A.M</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>appointment_slot</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>12P.M</label>
+            <language>en</language>
+            <name>x_pvi_health_care_day_schedule</name>
+            <sequence>3</sequence>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-08-04 07:03:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2f9b89fe0fdc47409948715be1050ebc</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-08-04 08:26:40</sys_updated_on>
+            <value>12P.M</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>appointment_slot</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>1P.M</label>
+            <language>en</language>
+            <name>x_pvi_health_care_day_schedule</name>
+            <sequence>4</sequence>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-08-04 07:03:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4cbb89fe0fdc47409948715be1050ea7</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-08-04 08:26:44</sys_updated_on>
+            <value>1P.M</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>appointment_slot</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>2P.M</label>
+            <language>en</language>
+            <name>x_pvi_health_care_day_schedule</name>
+            <sequence>5</sequence>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-08-04 08:24:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>98cb0dfe0fdc47409948715be1050e87</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-08-04 08:26:47</sys_updated_on>
+            <value>2P.M</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>appointment_slot</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>3P.M</label>
+            <language>en</language>
+            <name>x_pvi_health_care_day_schedule</name>
+            <sequence>6</sequence>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-08-04 08:25:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a65e59ba0f1087409948715be1050ed8</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-08-04 08:26:50</sys_updated_on>
+            <value>3P.M</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>appointment_slot</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>4P.M</label>
+            <language>en</language>
+            <name>x_pvi_health_care_day_schedule</name>
+            <sequence>7</sequence>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-08-04 08:25:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cb7ed9ba0f1087409948715be1050eda</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-08-04 08:26:55</sys_updated_on>
+            <value>4P.M</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>appointment_slot</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>5P.M</label>
+            <language>en</language>
+            <name>x_pvi_health_care_day_schedule</name>
+            <sequence>8</sequence>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-08-04 08:26:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>af8e1dba0f1087409948715be1050e17</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-08-04 08:26:58</sys_updated_on>
+            <value>5P.M</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>appointment_slot</element>
+            <name>x_pvi_health_care_day_schedule</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>dinesh.kumarm</sys_created_by>
+            <sys_created_on>2017-08-04 07:02:22</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>4b6bc5fe0fdc47409948715be1050eed</sys_id>
+            <sys_mod_count>18</sys_mod_count>
+            <sys_name>appointment_slot</sys_name>
+            <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+            <sys_update_name>sys_choice_x_pvi_health_care_day_schedule_appointment_slot</sys_update_name>
+            <sys_updated_by>dinesh.kumarm</sys_updated_by>
+            <sys_updated_on>2017-08-04 08:26:58</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

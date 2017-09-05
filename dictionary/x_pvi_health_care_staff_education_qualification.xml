@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Staff Education Qualification" max_length="40" name="x_pvi_health_care_staff_education_qualification" type="collection">
+        <element label="Degree Name" max_length="40" name="degree_name" type="string"/>
+        <element label="Experience" max_length="40" name="experience" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Specialization type" max_length="40" name="specialization_type" type="string">
+            <choice>
+                <element label="Major" sequence="0" value="Major"/>
+                <element label="Addtional" sequence="1" value="Addtional"/>
+            </choice>
+        </element>
+        <element label="Staff Name" max_length="32" name="staff_name" reference="x_pvi_health_care_staff_profile" type="reference"/>
+        <element label="Year of Graduation" max_length="40" name="year_of_graduation" type="string"/>
+        <index name="index">
+            <element name="staff_name"/>
+        </index>
+    </element>
+</database>

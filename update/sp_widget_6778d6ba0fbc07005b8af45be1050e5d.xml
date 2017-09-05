@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope) {
+  /* widget controller */
+  var c = this;
+	var buff,buff1;
+	var for1=0,for2=0;
+	var temp=$scope.data.pass1;
+//	alert(temp);
+	if($scope.data.g2!=0)
+		{
+		
+			var time1=[];
+			var cons1=[];
+			var dat1=[];
+			
+			
+			dat1=$scope.data.pass3.split('/');
+			time1=$scope.data.pass2.split('-');
+			cons1=$scope.data.pass1.split('-');					
+		
+			var len=time1.length-1;					
+	
+			
+			for(i=0,j=0;i<len;i++)
+				{
+							for1=i+1;
+					
+					//For setting the time
+					
+							for2=0;
+							for2=j+1;
+							
+							buff='c'+for1+""+for2;
+							//alert(buff);
+							
+							document.getElementById(buff).innerHTML=dat1[i];
+							
+						
+						
+					//For setting the Timing
+							for2+=1;
+			
+							buff1='c'+for1+""+for2;
+							
+							//alert(buff1);
+							document.getElementById(buff1).innerHTML=time1[i];
+							j=0;
+						
+						
+					// For setting the Consultant name
+					
+					for2+=1;
+					buff2='c'+for1+""+for2;
+					document.getElementById(buff2).innerHTML=cons1[i];
+					
+								
+			
+				
+							}
+				
+
+		}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>#main
+{
+  background-color:#EBEBEB;
+color: red;
+ 
+}
+
+td{
+ width:300px;
+  font:black;
+  
+}
+
+td{
+ text-align: center; 
+}
+
+ .hov:hover {background-color:#dcf49a;}
+
+#op
+{
+ font:red; 
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>next_appointment</id>
+        <internal>false</internal>
+        <link/>
+        <name>Next appointment</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+ var g1;
+	
+	//Getting the appointment
+ data.g1=new GlideRecord("x_pvi_health_care_appointment");
+	data.g1.query();
+	data.i=0;
+		while(data.g1.next())
+	{
+	data.i++;
+	}
+	
+	//getting the logged in user
+	
+	var n=gs.getUserName();
+	//gs.addInfoMessage(n);
+	//Getting the particular patient sys_id
+	var g3=new GlideRecord("x_pvi_health_care_patient");
+	g3.addQuery('x_pvi_health_care_user_id',n);
+	g3.query();
+	g3.next();	
+	var sys=g3.sys_id;
+
+	
+	
+	//Getting the timimg and doctor name
+
+	var g2;
+	data.g2=new GlideRecord("x_pvi_health_care_appointment");
+	data.g2.addQuery('patient',sys);
+	data.g2.query();
+	
+data.pass1="";
+	data.pass2="";
+	data.pass3="";
+	i=0;
+	//data.g2.next();
+	while(data.g2.next())
+		{
+	data.pass2+=data.g2.getValue('appointment_slot');
+	data.pass1+=data.g2.getDisplayValue('doctor_name');
+		
+			
+			
+			
+			
+			data.pass3+=data.g2.getValue('date');
+		i++;
+		
+			
+			data.pass2+="-";
+			data.pass1+="-";
+			data.pass3+="/";
+				
+				}
+	//gs.addInfoMessage(data.pass2);
+	//gs.addInfoMessage(data.pass1);
+	
+	
+
+	})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>dinesh.kumarm</sys_created_by>
+        <sys_created_on>2017-08-29 09:10:29</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>6778d6ba0fbc07005b8af45be1050e5d</sys_id>
+        <sys_mod_count>184</sys_mod_count>
+        <sys_name>Next appointment</sys_name>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sp_widget_6778d6ba0fbc07005b8af45be1050e5d</sys_update_name>
+        <sys_updated_by>bala.kannan</sys_updated_by>
+        <sys_updated_on>2017-09-04 11:57:14</sys_updated_on>
+        <template><![CDATA[ 
+  <b>Your Next Appointment</b>
+   
+    <table id="detail" border="1" >
+     <tr id="main">
+       <td>
+       <b>
+         Date
+         </b>
+       
+       </td>
+       
+     <td >
+     <b > Timings</b>
+      </td>
+      <td >
+        <b>Consultant</b>
+      </td>
+       
+      </tr >
+      
+   
+         <tr class="hov"> 
+      <td id="c11">
+           </td>     
+           
+     <td id="c12">
+     
+      </td>
+      <td id="c13">
+      
+      </td>
+      </tr>
+      
+     
+         <tr class="hov"> 
+     <td id="c21">
+           </td>
+           
+           <td id="c22">
+   
+      </td>
+      <td id="c23">
+      
+      </td>
+      </tr >
+      
+      <tr class="hov"> 
+     <td id="c31">
+           </td>
+           
+           <td id="c32">
+   
+      </td>
+      <td id="c33">
+      
+      </td>
+      </tr >
+      
+     
+      
+    </table>
+    
+   
+    
+    
+    
+  
+ ]]></template>
+    </sp_widget>
+</record_update>

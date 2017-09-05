@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance_table">
+    <sp_instance_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <display_field>patient</display_field>
+        <field_list>patient,appointment_slot,date,doctor_name</field_list>
+        <filter table="x_pvi_health_care_appointment">doctor_nameDYNAMIC5f446e0f0f3047009948715be1050e49<item endquery="false" field="doctor_name" goto="false" newquery="false" operator="DYNAMIC" or="false" value="5f446e0f0f3047009948715be1050e49"/>
+        </filter>
+        <glyph/>
+        <id/>
+        <maximum_entries>5</maximum_entries>
+        <order>2</order>
+        <order_by/>
+        <order_direction>asc</order_direction>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="1">890abd320fb407009948715be1050e7f</sp_column>
+        <sp_page/>
+        <sp_widget display_value="Data table without Breadcrumbs">7aaa6e7e0ff407009948715be1050e66</sp_widget>
+        <sys_class_name>sp_instance_table</sys_class_name>
+        <sys_created_by>saravanan.vijaykumar</sys_created_by>
+        <sys_created_on>2017-08-30 04:08:39</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>b3fc920b0f3047009948715be1050e23</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sp_instance_table_b3fc920b0f3047009948715be1050e23</sys_update_name>
+        <sys_updated_by>saravanan.vijaykumar</sys_updated_by>
+        <sys_updated_on>2017-08-30 06:24:07</sys_updated_on>
+        <table>x_pvi_health_care_appointment</table>
+        <title/>
+        <url/>
+        <widget_parameters/>
+    </sp_instance_table>
+</record_update>

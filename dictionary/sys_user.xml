@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="ref_ac_columns_search=true,ref_ac_order_by=name,ref_ac_columns=email,display_image=photo,ref_auto_completer=AJAXTableCompleter,iterativeDelete=true,text_index_translations" create_roles="user_admin" defaultsort="-1" dynamic_creation_script="dynamicUserCreation(current, value);" label="User" max_length="40" name="sys_user" text_index="true" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Address" max_length="1000" name="x_pvi_health_care_address" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="AGE" max_length="40" name="x_pvi_health_care_age" type="string"/>
+        <element label="Date of Joining" max_length="40" name="x_pvi_health_care_date_of_joining" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Gender" max_length="40" name="x_pvi_health_care_gender" type="string">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Name" max_length="40" name="x_pvi_health_care_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="User ID" max_length="40" name="x_pvi_health_care_user_id" type="string"/>
+    </element>
+</database>

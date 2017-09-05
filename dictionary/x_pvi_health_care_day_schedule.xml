@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Day Schedule" max_length="40" name="x_pvi_health_care_day_schedule" type="collection">
+        <element choice="1" label="Appointment Slot" max_length="40" name="appointment_slot" type="choice">
+            <choice>
+                <element label="9A.M" sequence="0" value="9A.M"/>
+                <element label="10A.M" sequence="1" value="10A.M"/>
+                <element label="11A.M" sequence="2" value="11A.M"/>
+                <element label="12P.M" sequence="3" value="12P.M"/>
+                <element label="1P.M" sequence="4" value="1P.M"/>
+                <element label="2P.M" sequence="5" value="2P.M"/>
+                <element label="3P.M" sequence="6" value="3P.M"/>
+                <element label="4P.M" sequence="7" value="4P.M"/>
+                <element label="5P.M" sequence="8" value="5P.M"/>
+            </choice>
+        </element>
+        <element label="Date" max_length="40" name="date" type="glide_date"/>
+        <element choice="1" label="Day" max_length="40" name="day" type="choice">
+            <choice/>
+        </element>
+        <element label="Week Number" max_length="40" name="week_number" type="integer"/>
+    </element>
+</database>

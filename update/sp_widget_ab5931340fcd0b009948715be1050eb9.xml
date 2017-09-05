@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function($scope) {
+	
+	var c=this;
+		
+	//var s=$scope.data.dat.split(":");
+	//var len=s.length;
+	//alert(s);
+	
+	
+var d =new Date();
+    
+    var n = ""+d.getDate()+"-"+(d.getMonth()+1)+"-"+d.getFullYear();
+	 
+	alert(n);
+	
+
+	//calculating the week number
+	
+	a=a.split("-");
+	gs.addInfoMessage(a[0]);
+	var temp0=a[0];
+	var temp1=a[1];
+	var temp2=a[2];
+	a[0]=temp1;
+	a[1]=temp2;
+    a[2]=temp0;
+a=a.join();
+	
+	alert(a);
+var n=a.replace(",","/");
+	var m=n.replace(",","/");
+	alert(m);	
+	
+	
+	var date1 = new Date("1/01/2017");
+var date2 = new Date(m);
+
+var timeDiff = Math.abs(date2.getTime() - date1.getTime());
+var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+var weekcount=diffDays/7;
+	weekcount=weekcount.round();
+	alert(weekcount);
+	
+	
+	
+	
+	
+for(i=1;i<len;i++)
+		{
+			
+				var concat="b"+i;
+			
+				document.getElementById(concat).value=s[i];
+	
+			}  
+
+}	
+
+	 
+		]]></client_script>
+        <controller_as>c</controller_as>
+        <css>
+			  .row1cell,.row2cell{
+
+   border-color: #f91c18;
+}
+input[type="text"]{
+  width:100px;
+  
+}
+table
+{
+   width: 1000PX;
+     height: 400PX;
+  background-color: #cccccc
+}
+ .row1cell{
+   text-align:center;
+ 
+ }
+</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>doctor_weekly_schedule</id>
+        <internal>false</internal>
+        <link/>
+        <name>Doctor weekly schedule</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+
+ 
+		var nam=gs.getUserName();
+var v="";
+v=new GlideRecord("x_pvi_health_care_doctor");
+	v.addQuery('x_pvi_health_care_user_id',nam);
+v.query();
+	v.next();
+	
+	var sys=v.sys_id;
+	
+v1=new GlideRecord('x_pvi_health_care_appointment');
+v1.addQuery('doctor_name',sys);	
+	//v1.addQuery('week_number');
+v1.query();
+v1.next();
+
+	
+
+})();
+	]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>bala.kannan</sys_created_by>
+        <sys_created_on>2017-09-04 12:02:21</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>ab5931340fcd0b009948715be1050eb9</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>Doctor weekly schedule</sys_name>
+        <sys_package display_value="Health Care" source="x_pvi_health_care">3720c0b50f484b005b8af45be1050e0b</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Health Care">3720c0b50f484b005b8af45be1050e0b</sys_scope>
+        <sys_update_name>sp_widget_ab5931340fcd0b009948715be1050eb9</sys_update_name>
+        <sys_updated_by>dinesh.kumarm</sys_updated_by>
+        <sys_updated_on>2017-09-05 05:16:56</sys_updated_on>
+        <template><![CDATA[<?xml version="1.0" encoding="utf-8" ?>
+<j:jelly trim="false" xmlns:j="jelly:core" xmlns:g="glide" xmlns:j2="null" xmlns:g2="null">
+	 
+    <table>
+      <div class="row1"><tr><td id="abc" class="row1cell" style=background-color:green><font color="white"><strong>Day\Time </strong></font></td>
+        <td class="row1cell" id="a1" style=background-color:green><font color="white"> <strong>9 A.M</strong></font></td>
+        <td class="row1cell" id="a2" style=background-color:green><font color="white"><strong>10 A.M</strong></font></td>
+        <td class="row1cell" id="a3" style=background-color:green><font color="white"><strong>11 A.M</strong></font></td>
+        <td class="row1cell" id="a4" style=background-color:green><font color="white"><strong>12 A.M</strong></font></td>
+        <td class="row1cell" id="a5" style=background-color:green><font color="white"><strong>1 P.M</strong></font></td>
+         <td class="row1cell" id="a6" style=background-color:green><font color="white"><strong>2 P.M</strong></font></td>
+         <td class="row1cell" id="a7" style=background-color:green><font color="white"><strong>3 P.M</strong></font></td>
+         <td class="row1cell" id="a8" style=background-color:green><font color="white"><strong>4 P.M</strong></font></td>
+        <td class="row1cell"  id="a9" style=background-color:green><font color="white"><strong>5 P.M</strong></font></td> </tr>
+        
+      
+        <tr> <td class="row2cell" id="sun" style=background-color:green><font color="white"><strong>Sunday</strong></font></td>
+        <td  class="row2cell"><input  type="text" id="b1" / ></td>
+        <td  class="row2cell"><input type="text" id="b2" /></td>
+        <td  class="row2cell"><input type="text" id="b3" /></td>
+        <td  class="row2cell"><input type="text" id="b4" /></td>
+         <td  class="row2cell"><input type="text" id="b5" /></td>
+        <td  class="row2cell"><input type="text" id="b6" /></td>
+        <td  class="row2cell"><input type="text" id="b7" /></td>
+        <td  class="row2cell"><input type="text" id="b8" /></td>
+        <td  class="row2cell"><input type="text" id="b9" /></td>
+        </tr>
+         <tr> <td id="mon" class="row2cell" style=background-color:green><font color="white"><strong>Monday</strong></font></td>
+        <td id="monday1" class="row2cell"><input type="text" id="c1" /></td>
+        <td id="monday2" class="row2cell"><input type="text" id="c2" /></td>
+        <td id="monday3" class="row2cell"><input type="text" id="c3" /></td>
+        <td id="monday4" class="row2cell"><input type="text" id="c4" /></td>
+         <td id="monday5" class="row2cell"><input type="text" id="c5" /></td>
+        <td id="monday6" class="row2cell"><input type="text" id="c6" /></td>
+        <td id="monday7" class="row2cell"><input type="text" id="c7" /></td>
+        <td id="monday8" class="row2cell"><input type="text" id="c8" /></td>
+        <td id="monday9" class="row2cell"><input type="text" id="c9" /></td>
+        </tr>
+         <tr> <td class="row2cell" id="tue" style=background-color:green><font color="white"><strong>Tuesday</strong></font></td>
+        <td id="tuesday1" class="row2cell"><input type="text" id="d1" /></td>
+        <td id="tuesday2" class="row2cell"><input type="text" id="d2" /></td>
+        <td id="tuesday3" class="row2cell"><input type="text" id="d3" /></td>
+        <td id="tuesday4" class="row2cell"><input type="text" id="d4" /></td>
+         <td id="tuesday5" class="row2cell"><input type="text" id="d5" /></td>
+        <td id="tuesday6" class="row2cell"><input type="text" id="d6" /></td>
+        <td id="tuesday7" class="row2cell"><input type="text" id="d7" /></td>
+        <td id="tuesday8" class="row2cell"><input type="text" id="d8" /></td>
+        <td id="tuesday9" class="row2cell"><input type="text" id="d9" /></td>
+        </tr>
+         <tr> <td class="row2cell" id="wed" style=background-color:green><font color="white"><strong>Wednesday</strong></font></td>
+        <td id="wednesday1" class="row2cell"><input type="text" id="e1" /></td>
+        <td id="wednesday2" class="row2cell"><input type="text" id="e2" /></td>
+        <td id="wednesday3" class="row2cell"><input type="text" id="e3" /></td>
+        <td id="wednesday4" class="row2cell"><input type="text" id="e4" /></td>
+         <td id="wednesday5" class="row2cell"><input type="text" id="e5" /></td>
+        <td id="wednesday6" class="row2cell"><input type="text" id="e6" /></td>
+        <td id="wednesday7" class="row2cell"><input type="text" id="e7"/></td>
+        <td id="wednesday8" class="row2cell"><input type="text" id="e8" /></td>
+        <td id="wednesday9" class="row2cell"><input type="text" id="e9" /></td>
+        </tr>
+         <tr> <td class="row2cell" id="thu" style=background-color:green><font color="white"><strong>Thursday</strong></font></td>
+        <td id="thursday1" class="row2cell"><input type="text" id="f1" /></td>
+        <td id="thursday2" class="row2cell"><input type="text" id="f2" /></td>
+        <td id="thursday3" class="row2cell"><input type="text" id="f3" /></td>
+        <td id="thursday4" class="row2cell"><input type="text" id="f4" /></td>
+        <td id="thursday5" class="row2cell"><input type="text" id="f5" /></td>
+        <td id="thursday6" class="row2cell"><input type="text" id="f6" /></td>
+        <td id="thursday7" class="row2cell"><input type="text" id="f7" /></td>
+        <td id="thursday8" class="row2cell"><input type="text" id="f8" /></td>
+        <td id="thursday9" class="row2cell"><input type="text" id="f9" /></td>
+        </tr>
+         <tr> <td class="row2cell" id="fri" style=background-color:green><font color="white"><strong>Friday</strong></font></td>
+        <td id="friday1" class="row2cell"><input type="text" id="g1" /></td>
+        <td id="friday2" class="row2cell"><input type="text" id="g2" /></td>
+        <td id="friday3" class="row2cell"><input type="text" id="g3" /></td>
+        <td id="friday4" class="row2cell"><input type="text" id="g4" /></td>
+        <td id="friday5" class="row2cell"><input type="text" id="g5" /></td>
+        <td id="friday6" class="row2cell"><input type="text" id="g6" /></td>
+        <td id="friday7" class="row2cell"><input type="text" id="g7" /></td>
+        <td id="friday8" class="row2cell"><input type="text" id="g8" /></td>
+        <td id="friday9" class="row2cell"><input type="text" id="g9" /></td>
+        </tr>
+         <tr> <td class="row2cell" id="sat" style=background-color:green><font color="white"><strong>Saturday</strong></font></td>
+        <td id="saturday1" class="row2cell"><input type="text" id="h1" /></td>
+        <td id="saturday2" class="row2cell"><input type="text" id="h2" /></td>
+        <td id="saturday3" class="row2cell"><input type="text" id="h3" /></td>
+        <td id="saturday4" class="row2cell"><input type="text" id="h4" /></td>
+         <td id="saturday5" class="row2cell"><input type="text" id="h5" /></td>
+        <td id="saturday6" class="row2cell"><input type="text" id="h6" /></td>
+        <td id="saturday7" class="row2cell"><input type="text" id="h7" /></td>
+        <td id="saturday8" class="row2cell"><input type="text" id="h8" /></td>
+        <td id="saturday9" class="row2cell"><input type="text" id="h9" /></td>
+        </tr>
+		
+		</div>  
+
+  
+  </table>
+]]></template>
+    </sp_widget>
+</record_update>
